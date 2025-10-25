@@ -101,7 +101,7 @@ public class PlayerCtrl : MonoBehaviour
                 fallpow = jumppow;
             }
             //Animation
-            animCtrl.SetBool("isJumping", false);
+//            animCtrl.SetBool("isJumping", false);
             animCtrl.SetFloat("Speed", moveDir.magnitude);
         }
         else
@@ -109,7 +109,7 @@ public class PlayerCtrl : MonoBehaviour
             if (fallpow > -2.0f || fallpow < -2.0f-fallspd )
             //if (!Mathf.Approximately(fallpow,-2))
             {
-                animCtrl.SetBool("isJumping", true);
+//                animCtrl.SetBool("isJumping", true);
             }
             fallpow += Physics.gravity.y * Time.deltaTime * fallspd;
         }
@@ -128,17 +128,35 @@ public class PlayerCtrl : MonoBehaviour
             }
             beforePos = groundobj.position;
             beforeGroundObj = groundobj;
-        }        //Movement
+        }
+
+        //Movement
         charCtrl.Move(((new Vector3(0, fallpow, 0) + (moveDir * speed)) * Time.deltaTime) - floorOffset);
 
-        // 常に-Z軸方向（前方向）を向く
-        transform.rotation = Quaternion.identity;
 
-        // アニメーション用の入力値設定
-        if (useAnimationRotate)
+        if(FPSMove)
         {
-            animCtrl.SetFloat("X", xaxis);
-            animCtrl.SetFloat("Y", yaxis);
+            transform.eulerAngles = new Vector3(
+                0, Vector3.SignedAngle(Vector3.forward, cameraFwdVec, Vector3.up), 0);
+
+        }
+        else
+        {
+            //Rotation
+            var rotdir = cameraFwdVec * yaxis + cameraRightVec * xaxis;
+            if (rotdir.magnitude > 0)
+            {
+                if (useAnimationRotate)
+                {
+                    animCtrl.SetFloat("X", xaxis);
+                    animCtrl.SetFloat("Y", yaxis);
+                }
+                else
+                {
+                    transform.eulerAngles = new Vector3(
+                    0, Vector3.SignedAngle(Vector3.forward, rotdir, Vector3.up), 0);
+                }
+            }
         }
     }
 
