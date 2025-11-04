@@ -11,7 +11,6 @@ public class MangaGet : MonoBehaviour
         if (!playerBag.itemList.Contains(mangaItem))
         {
             playerBag.itemList.Add(mangaItem);
-            ItemManager.CreateNewItem(mangaItem);
          }
     }
 }
