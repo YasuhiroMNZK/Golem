@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro; // TextMeshPro用
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;

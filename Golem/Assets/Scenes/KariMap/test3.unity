@@ -836,7 +836,6 @@ GameObject:
   m_Component:
   - component: {fileID: 761845411}
   - component: {fileID: 761845412}
-  - component: {fileID: 761845413}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -917,19 +916,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &761845413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 761845410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f209835bb7ee14647852b821244fb3d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Settlement
 --- !u!1 &857385776
 GameObject:
   m_ObjectHideFlags: 0
@@ -3437,12 +3423,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d6248cd4304fc94d903e94e9646f644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energyConsumptionRate: 2
+  energyConsumptionRate: 10
   energySlider: {fileID: 761845412}
   onEnergyDepleted:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 761845413}
+      - m_Target: {fileID: 2092848128}
         m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
         m_MethodName: Action
         m_Mode: 1
@@ -3576,6 +3562,7 @@ GameObject:
   - component: {fileID: 2092848124}
   - component: {fileID: 2092848123}
   - component: {fileID: 2092848127}
+  - component: {fileID: 2092848128}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3684,6 +3671,19 @@ MonoBehaviour:
   InfoShow: {fileID: 890235401}
   CoverShow: {fileID: 9175086590886461928}
   bagItemIndex: 0
+--- !u!114 &2092848128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092848122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f209835bb7ee14647852b821244fb3d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Manga
 --- !u!224 &1503605097674967151
 RectTransform:
   m_ObjectHideFlags: 0
