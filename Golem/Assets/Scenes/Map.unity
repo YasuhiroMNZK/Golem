@@ -1852,7 +1852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f209835bb7ee14647852b821244fb3d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Manga
+  sceneName: Settlement
 --- !u!114 &1340333362
 MonoBehaviour:
   m_ObjectHideFlags: 0
