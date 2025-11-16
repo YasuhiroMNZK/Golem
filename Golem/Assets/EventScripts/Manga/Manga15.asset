@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c98784b745f72ac46a9e7fdb220fd0aa, type: 3}
-  m_Name: Misunder
+  m_Script: {fileID: 11500000, guid: 6ecd2ec15bddb7c488cca599a019e481, type: 3}
+  m_Name: Manga15
   m_EditorClassIdentifier: 
-  itemList: []
+  mangaName: "\u30DE\u30F3\u30AC\uFF11\uFF15"
+  mangaCover: {fileID: 21300000, guid: 7555df19025646a459c064cdc6258865, type: 3}
+  mangaInfo: "\u30DE\u30F3\u30AC\uFF11\uFF15\u306E\u5185\u5BB9"
