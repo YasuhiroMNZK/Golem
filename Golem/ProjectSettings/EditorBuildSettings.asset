@@ -44,5 +44,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/KariMap/test3.unity
     guid: be1a311b9ef56d747a3ead8d69ec584e
+  - enabled: 1
+    path: Assets/Scenes/Epilogue.unity
+    guid: b31363c416b9e2e40a32f70aa55444c2
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
