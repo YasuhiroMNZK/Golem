@@ -8,13 +8,19 @@ public class MangaMove : MonoBehaviour
 
     public void MoveManga()
     {
-            foreach(Item item in bagFrom.itemList)
+        if (bagTo != null&&bagFrom != null&&bagFrom.itemList != null) {
+            foreach (Item item in bagFrom.itemList)
             {
-                if(!bagTo.itemList.Contains(item))
+                if (!bagTo.itemList.Contains(item))
                 {
                     bagTo.itemList.Add(item);
+                    if (bagTo.itemList != null)
+                    {
+                        Debug.Log("移動済み");
+                    }
                 }
             }
             bagFrom.itemList.Clear();
+        }
     }
 }
