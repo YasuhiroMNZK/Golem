@@ -6,4 +6,9 @@ using System.Collections.Generic;
 public class Bag : ScriptableObject
 {
     public List<Item> itemList = new List<Item>();
+
+    public void Init()
+    {
+       Debug.Log($"Bag {name} を初期化しました");
+    }
 }
