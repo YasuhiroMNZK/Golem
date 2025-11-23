@@ -8,7 +8,7 @@ public class MangaCopy : MonoBehaviour
 
     public void CopyManga()
     {
-        if (bagTo != null&&bagFrom != null&&bagFrom.itemList != null) 
+        if (bagTo != null&&bagFrom != null&&bagFrom.itemList != null)
         {
             foreach (Item item in bagFrom.itemList)
             {
