@@ -17,6 +17,7 @@ public class PlayerCtrl : MonoBehaviour
 
     [SerializeField] bool zEnable = true;
     [SerializeField] bool xEnable = true;
+    [SerializeField] bool canRun = true;
     [SerializeField] bool canJump = true;
     [SerializeField] bool FPSMove = false;
 
@@ -45,17 +46,19 @@ public class PlayerCtrl : MonoBehaviour
 
 
 
-
-
     // Update is called once per frame
     void Update()
     {
 
         var moveRate = 1.0f;
-        if (Input.GetButton("Fire3"))
-        {
-            moveRate = 0.5f;
-        }
+        animCtrl.SetBool("isRunning", false);
+        // Shiftキー（Fire3）による速度調整
+
+         if (canRun && Input.GetButton("Fire3") && (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0))
+         {
+             moveRate = 2.0f;
+             animCtrl.SetBool("isRunning", true);
+         }
 
         // input and calculate move direction
         float xaxis = Input.GetAxis("Horizontal") * moveRate;
@@ -101,7 +104,7 @@ public class PlayerCtrl : MonoBehaviour
                 fallpow = jumppow;
             }
             //Animation
-//            animCtrl.SetBool("isJumping", false);
+            animCtrl.SetBool("isJumping", false);
             animCtrl.SetFloat("Speed", moveDir.magnitude);
         }
         else
@@ -109,7 +112,7 @@ public class PlayerCtrl : MonoBehaviour
             if (fallpow > -2.0f || fallpow < -2.0f-fallspd )
             //if (!Mathf.Approximately(fallpow,-2))
             {
-//                animCtrl.SetBool("isJumping", true);
+                animCtrl.SetBool("isJumping", true);
             }
             fallpow += Physics.gravity.y * Time.deltaTime * fallspd;
         }
