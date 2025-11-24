@@ -47,5 +47,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Epilogue.unity
     guid: b31363c416b9e2e40a32f70aa55444c2
+  - enabled: 1
+    path: Assets/Scenes/test1.unity
+    guid: a3ab392eb2a8e48e789b19f957a06fe1
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

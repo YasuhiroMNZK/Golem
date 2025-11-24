@@ -17,6 +17,7 @@ public class PlayerCtrl : MonoBehaviour
 
     [SerializeField] bool zEnable = true;
     [SerializeField] bool xEnable = true;
+    [SerializeField] bool canRun = true;
     [SerializeField] bool canJump = true;
     [SerializeField] bool FPSMove = false;
 
@@ -53,7 +54,7 @@ public class PlayerCtrl : MonoBehaviour
         animCtrl.SetBool("isRunning", false);
         // Shiftキー（Fire3）による速度調整
 
-         if (Input.GetButton("Fire3") && (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0))
+         if (canRun && Input.GetButton("Fire3") && (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0))
          {
              moveRate = 2.0f;
              animCtrl.SetBool("isRunning", true);
