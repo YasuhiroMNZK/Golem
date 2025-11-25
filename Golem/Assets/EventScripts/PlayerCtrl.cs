@@ -23,6 +23,8 @@ public class PlayerCtrl : MonoBehaviour
 
     [SerializeField] bool useAnimationRotate = false;
 
+    [SerializeField] float BeScale = 1;
+
     Vector3 forwardVec;
     Vector3 rightVec;
 
@@ -54,11 +56,11 @@ public class PlayerCtrl : MonoBehaviour
         animCtrl.SetBool("isRunning", false);
         // Shiftキー（Fire3）による速度調整
 
-         if (canRun && Input.GetButton("Fire3") && (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0))
-         {
-             moveRate = 2.0f;
-             animCtrl.SetBool("isRunning", true);
-         }
+        if (canRun && Input.GetButton("Fire3") && (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0))
+        {
+            moveRate = 2.0f;
+            animCtrl.SetBool("isRunning", true);
+        }
 
         // input and calculate move direction
         float xaxis = Input.GetAxis("Horizontal") * moveRate;
@@ -109,7 +111,7 @@ public class PlayerCtrl : MonoBehaviour
         }
         else
         {
-            if (fallpow > -2.0f || fallpow < -2.0f-fallspd )
+            if (fallpow > -2.0f || fallpow < -2.0f - fallspd)
             //if (!Mathf.Approximately(fallpow,-2))
             {
                 animCtrl.SetBool("isJumping", true);
@@ -137,7 +139,7 @@ public class PlayerCtrl : MonoBehaviour
         charCtrl.Move(((new Vector3(0, fallpow, 0) + (moveDir * speed)) * Time.deltaTime) - floorOffset);
 
 
-        if(FPSMove)
+        if (FPSMove)
         {
             transform.eulerAngles = new Vector3(
                 0, Vector3.SignedAngle(Vector3.forward, cameraFwdVec, Vector3.up), 0);
@@ -170,6 +172,22 @@ public class PlayerCtrl : MonoBehaviour
             groundobj = hit.transform;
     }
 
+    public void OnRun()
+    {
+        canRun = true;
+    }
+
+    public void OnJump()
+    {
+        canJump = true;
+    }
+
+
+    public void OnScale()
+    {
+        transform.localScale = new Vector3(BeScale, BeScale, BeScale);
+    }
+    
     //private void OnTriggerEnter(Collider other)
     //{
     //    //Ground object detecting
