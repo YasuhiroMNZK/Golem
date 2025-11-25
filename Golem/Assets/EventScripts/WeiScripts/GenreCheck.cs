@@ -29,7 +29,7 @@ public class GenreCheck : TriggerBase
         }
     }
 
-    void Start()
+    void Awake()
     {
         CheckGenreMatch();
     }

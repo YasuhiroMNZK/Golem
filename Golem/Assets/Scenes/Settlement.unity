@@ -652,8 +652,9 @@ GameObject:
   - component: {fileID: 1338635279}
   - component: {fileID: 1338635278}
   - component: {fileID: 1338635277}
-  - component: {fileID: 1338635282}
   - component: {fileID: 1338635281}
+  - component: {fileID: 1338635282}
+  - component: {fileID: 1338635283}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -754,11 +755,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1338635276}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1157f756d067b3d4da1fc25ca5518485, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fd0b354e37b98b49bdbda8a5ecb92fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bagFrom: {fileID: 11400000, guid: aa0be80aa22ad3f43a30c25b40f58142, type: 2}
-  bagTo: {fileID: 11400000, guid: 172f0e08ca9e6574c831f62c91d6e5a9, type: 2}
+  elements:
+  - {fileID: 11400000, guid: 3a8bb299e21d0044a8c2542bdc13210b, type: 2}
+  - {fileID: 11400000, guid: d28e867d82d364843bd275e041038a06, type: 2}
+  - {fileID: 11400000, guid: da8ba0473b971524e9c2c527d1347d5c, type: 2}
+  - {fileID: 11400000, guid: ad77c98179b698246abe132bdb02e0c5, type: 2}
+  - {fileID: 11400000, guid: 3c4f3e32a5357324da3f06e99800b9c4, type: 2}
+  - {fileID: 11400000, guid: 91070da813e6cc94b9e72123741b87bd, type: 2}
+  - {fileID: 11400000, guid: ba89dbd5c14d9694e85ef5cfd910c7ee, type: 2}
+  - {fileID: 11400000, guid: 0a98b8fd815f03741b4a76485a27c997, type: 2}
+  - {fileID: 11400000, guid: 0b12dc457f9b40e4e83128cbccce0836, type: 2}
 --- !u!114 &1338635282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -774,9 +783,33 @@ MonoBehaviour:
   action:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1338635283}
+        m_TargetAssemblyTypeName: MapFlag, Assembly-CSharp
+        m_MethodName: RelayAction
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1338635283}
+        m_TargetAssemblyTypeName: MapFlag, Assembly-CSharp
+        m_MethodName: RelayAction
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1338635281}
-        m_TargetAssemblyTypeName: MangaCopy, Assembly-CSharp
-        m_MethodName: CopyManga
+        m_TargetAssemblyTypeName: ElementRandom, Assembly-CSharp
+        m_MethodName: BagShuffle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -786,6 +819,92 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1338635283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338635276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bda1eb658bea78b44b76a6969445cee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events:
+  - m_PersistentCalls:
+      m_Calls: []
+  - m_PersistentCalls:
+      m_Calls: []
+  - m_PersistentCalls:
+      m_Calls: []
+  - m_PersistentCalls:
+      m_Calls: []
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1338635281}
+        m_TargetAssemblyTypeName: ElementRandom, Assembly-CSharp
+        m_MethodName: AddElement
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 69fe51ac54e357544aa9d347b1379972, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Bag, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1338635281}
+        m_TargetAssemblyTypeName: ElementRandom, Assembly-CSharp
+        m_MethodName: AddElement
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 9a4338b2e15931c49b0f314935eff903, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Bag, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1338635281}
+        m_TargetAssemblyTypeName: ElementRandom, Assembly-CSharp
+        m_MethodName: AddElement
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 30f80516c9be87d498a5755399e471e7, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Bag, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1338635281}
+        m_TargetAssemblyTypeName: ElementRandom, Assembly-CSharp
+        m_MethodName: AddElement
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 7e4b0da881dec6d4793844ebb2968117, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Bag, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1338635281}
+        m_TargetAssemblyTypeName: ElementRandom, Assembly-CSharp
+        m_MethodName: AddElement
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 5fd4a5aeefec8af45b9abe7033b136e3, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Bag, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  gameFlags: 000000000101
 --- !u!1 &1590945115
 GameObject:
   m_ObjectHideFlags: 0
