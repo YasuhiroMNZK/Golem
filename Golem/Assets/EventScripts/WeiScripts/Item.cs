@@ -8,4 +8,7 @@ public class Item : ScriptableObject
     public Sprite mangaCover;
     [TextArea]
     public string mangaInfo;
+
+    [TextArea]
+    public string mangaText;
 }

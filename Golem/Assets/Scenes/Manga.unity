@@ -4210,6 +4210,8 @@ GameObject:
   - component: {fileID: 2014781962}
   - component: {fileID: 2014781963}
   - component: {fileID: 2014781964}
+  - component: {fileID: 2014781966}
+  - component: {fileID: 2014781965}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4411,6 +4413,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mangaItem: {fileID: 11400000, guid: 7dc913fc46fc0b24eb78e71ac2f8e4c5, type: 2}
   playerBag: {fileID: 11400000, guid: 5795d35f47a489a4a932e2454e1f6bdc, type: 2}
+--- !u!114 &2014781965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014781953}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f053cc42adfd06f43873bc97376564be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2014781966}
+        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
+        m_MethodName: Action
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Bag: {fileID: 11400000, guid: 5795d35f47a489a4a932e2454e1f6bdc, type: 2}
+  Count: 5
+--- !u!114 &2014781966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014781953}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f209835bb7ee14647852b821244fb3d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Epilogue
 --- !u!1 &2079046841
 GameObject:
   m_ObjectHideFlags: 0
