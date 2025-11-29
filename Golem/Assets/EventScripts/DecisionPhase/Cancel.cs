@@ -31,14 +31,4 @@ public class Cancel : MonoBehaviour
         
         Debug.Log("決定内容をリセットしました");
     }
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
 }

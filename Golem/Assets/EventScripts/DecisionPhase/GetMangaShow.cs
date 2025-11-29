@@ -115,10 +115,4 @@ public class GetMangaShow : MonoBehaviour
             targetImage.sprite = item.mangaCover;
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

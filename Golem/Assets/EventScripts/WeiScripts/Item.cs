@@ -11,4 +11,6 @@ public class Item : ScriptableObject
 
     [TextArea]
     public string mangaText;
+
+    public Sprite misunder;
 }

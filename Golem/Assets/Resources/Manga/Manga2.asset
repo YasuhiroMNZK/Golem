@@ -15,3 +15,5 @@ MonoBehaviour:
   mangaName: "\u30DE\u30F3\u30AC\uFF12"
   mangaCover: {fileID: 21300000, guid: 7555df19025646a459c064cdc6258865, type: 3}
   mangaInfo: "\u30DE\u30F3\u30AC\uFF12\u306E\u5185\u5BB9"
+  mangaText: 
+  misunder: {fileID: 21300000, guid: 3964f88a4ffa447ab8d0221b8dfacfc4, type: 3}
