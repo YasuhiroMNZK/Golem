@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ecd2ec15bddb7c488cca599a019e481, type: 3}
   m_Name: Manga4
   m_EditorClassIdentifier: 
-  mangaName: "\u30DE\u30F3\u30AC\uFF14"
+  mangaName: "\u5317\u6597\u306E\u72AC"
   mangaCover: {fileID: 21300000, guid: 373ffcccb49ff794aba2ffd098a44189, type: 3}
   mangaInfo: "\u30DE\u30F3\u30AC\uFF14\u306E\u5185\u5BB9"
+  mangaText: 
+  misunder: {fileID: 0}

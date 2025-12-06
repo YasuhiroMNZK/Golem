@@ -1,42 +1,48 @@
 using UnityEngine;
-using UnityEngine.UI;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 
 public class NPCMisunder : MonoBehaviour
 {
     [SerializeField] private Bag getMangaBag;
-    [SerializeField] private GameObject Misunder;
-    int bagItemIndex = 0;
+    [SerializeField] private GameObject character;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        ShowMisunder();
-    }
-
-    void ShowMisunder()
-    {
-        if (getMangaBag == null || getMangaBag.itemList == null || getMangaBag.itemList.Count == 0) return;
-        if (Misunder == null) return;
-        var misunder = Misunder.GetComponent<SpriteRenderer>();
-        if (misunder != null)
+        if (getMangaBag?.itemList?.Count > 0)
         {
-            MangaMisunder(bagItemIndex, misunder);
-            return;
+            Item item = getMangaBag.itemList[0]; // 常に最初のアイテム
+            if (item?.misunder != null && item.animationClips == null)
+                SetSprite(item);
+            else if (item?.animationClips != null)
+                SetAnimation(item);
         }
     }
 
-        public void MangaMisunder(int index, SpriteRenderer targetImage)
+    void SetSprite(Item item)
     {
-        if (getMangaBag == null || getMangaBag.itemList == null) return;
-        if (index < 0 || index >= getMangaBag.itemList.Count) return;
+        var spriteRenderer = character?.GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null)
+            spriteRenderer.sprite = item.misunder;
+    }
 
-        Item item = getMangaBag.itemList[index];
-        if (item != null && targetImage != null)
+    void SetAnimation(Item item)
+    {
+        var animator = character?.GetComponent<Animator>();
+        if (animator?.runtimeAnimatorController != null)
         {
-            targetImage.sprite = item.misunder;
+            // AnimatorOverrideControllerを作成
+            var overrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
+            // 既存のアニメーションクリップを取得
+            var clips = animator.runtimeAnimatorController.animationClips;
+            
+            if (clips.Length > 0)
+            {
+                // 最初のクリップをアイテムのアニメーションクリップで上書き
+                overrideController[clips[0]] = item.animationClips;
+                // 上書きしたコントローラーをAnimatorに設定
+                animator.runtimeAnimatorController = overrideController;
+                // アニメーションを再生
+                animator.Play(0);
+            }
         }
     }
 }

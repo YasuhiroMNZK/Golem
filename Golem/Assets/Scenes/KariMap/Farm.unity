@@ -567,7 +567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getMangaBag: {fileID: 11400000, guid: 7e4b0da881dec6d4793844ebb2968117, type: 2}
-  Misunder: {fileID: 1374539141}
+  character: {fileID: 1374539141}
 --- !u!1 &168337496
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,7 +1662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5bc094b0a2f5e74d8ebaeb1d720b190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mangaItem: {fileID: 11400000, guid: 38035f11d6155d84bbf92058af80ca84, type: 2}
+  mangaItem: {fileID: 11400000, guid: ff947e3d748c63742b818d60ec67df7b, type: 2}
   playerBag: {fileID: 11400000, guid: bcac1d32e3ae5fe409deafcb15c76365, type: 2}
 --- !u!114 &389252163
 MonoBehaviour:
@@ -2164,7 +2164,7 @@ GameObject:
   - component: {fileID: 501783428}
   - component: {fileID: 501783430}
   m_Layer: 0
-  m_Name: manga11
+  m_Name: manga3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2183,7 +2183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetBag: {fileID: 11400000, guid: 172f0e08ca9e6574c831f62c91d6e5a9, type: 2}
-  targetItem: {fileID: 11400000, guid: 38035f11d6155d84bbf92058af80ca84, type: 2}
+  targetItem: {fileID: 11400000, guid: ff947e3d748c63742b818d60ec67df7b, type: 2}
 --- !u!4 &501783429
 Transform:
   m_ObjectHideFlags: 0
@@ -2214,7 +2214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetBag: {fileID: 11400000, guid: 525da291ca5a4c14b99aa56cefe73075, type: 2}
-  targetItem: {fileID: 11400000, guid: 38035f11d6155d84bbf92058af80ca84, type: 2}
+  targetItem: {fileID: 11400000, guid: ff947e3d748c63742b818d60ec67df7b, type: 2}
 --- !u!1 &518915938
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,6 +3716,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1374539143}
   - component: {fileID: 1374539142}
+  - component: {fileID: 1374539144}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -3793,6 +3794,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 142460061}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1374539144
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374539141}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 714c068a13ac54478b6919ccca119e62, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1382530792
 GameObject:
   m_ObjectHideFlags: 0
@@ -4717,7 +4740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getMangaBag: {fileID: 11400000, guid: 5fd4a5aeefec8af45b9abe7033b136e3, type: 2}
-  Misunder: {fileID: 2031326409}
+  character: {fileID: 2031326409}
 --- !u!1 &2031326409
 GameObject:
   m_ObjectHideFlags: 0
@@ -4728,6 +4751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2031326411}
   - component: {fileID: 2031326410}
+  - component: {fileID: 2031326412}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -4805,6 +4829,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2023406035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2031326412
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031326409}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 714c068a13ac54478b6919ccca119e62, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2069250859
 GameObject:
   m_ObjectHideFlags: 0

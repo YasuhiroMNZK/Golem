@@ -13,4 +13,6 @@ public class Item : ScriptableObject
     public string mangaText;
 
     public Sprite misunder;
+
+    public AnimationClip animationClips;
 }

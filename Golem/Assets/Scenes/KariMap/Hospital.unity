@@ -911,6 +911,7 @@ GameObject:
   m_Component:
   - component: {fileID: 772304060}
   - component: {fileID: 772304059}
+  - component: {fileID: 772304061}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -988,6 +989,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1670057596}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &772304061
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772304058}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 714c068a13ac54478b6919ccca119e62, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &803848391
 GameObject:
   m_ObjectHideFlags: 0
@@ -3862,7 +3885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getMangaBag: {fileID: 11400000, guid: ba89dbd5c14d9694e85ef5cfd910c7ee, type: 2}
-  Misunder: {fileID: 772304058}
+  character: {fileID: 772304058}
 --- !u!1 &1792286502
 GameObject:
   m_ObjectHideFlags: 0
@@ -3948,6 +3971,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1794564465}
   - component: {fileID: 1794564464}
+  - component: {fileID: 1794564466}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -4025,6 +4049,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2043104082}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1794564466
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794564463}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 714c068a13ac54478b6919ccca119e62, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1901901112
 GameObject:
   m_ObjectHideFlags: 0
@@ -4367,7 +4413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getMangaBag: {fileID: 11400000, guid: 0a98b8fd815f03741b4a76485a27c997, type: 2}
-  Misunder: {fileID: 1794564463}
+  character: {fileID: 1794564463}
 --- !u!1 &2050838812
 GameObject:
   m_ObjectHideFlags: 0

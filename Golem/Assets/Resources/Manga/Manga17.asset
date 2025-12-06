@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ecd2ec15bddb7c488cca599a019e481, type: 3}
   m_Name: Manga17
   m_EditorClassIdentifier: 
-  mangaName: "\u30DE\u30F3\u30AC\uFF11\uFF17"
+  mangaName: "\u63A8\u3059\u306E\u5B50"
   mangaCover: {fileID: 21300000, guid: 7555df19025646a459c064cdc6258865, type: 3}
   mangaInfo: "\u30DE\u30F3\u30AC\uFF11\uFF17\u306E\u5185\u5BB9"
+  mangaText: 
+  misunder: {fileID: 21300000, guid: 3964f88a4ffa447ab8d0221b8dfacfc4, type: 3}
+  animationClips: []

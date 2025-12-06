@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 29037421}
   - component: {fileID: 29037422}
   m_Layer: 0
-  m_Name: manga3
+  m_Name: manga11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetBag: {fileID: 11400000, guid: 172f0e08ca9e6574c831f62c91d6e5a9, type: 2}
-  targetItem: {fileID: 11400000, guid: ff947e3d748c63742b818d60ec67df7b, type: 2}
+  targetItem: {fileID: 11400000, guid: 38035f11d6155d84bbf92058af80ca84, type: 2}
 --- !u!114 &29037422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetBag: {fileID: 11400000, guid: 525da291ca5a4c14b99aa56cefe73075, type: 2}
-  targetItem: {fileID: 11400000, guid: ff947e3d748c63742b818d60ec67df7b, type: 2}
+  targetItem: {fileID: 11400000, guid: 38035f11d6155d84bbf92058af80ca84, type: 2}
 --- !u!1 &39253823
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 39253825}
   - component: {fileID: 39253826}
   m_Layer: 0
-  m_Name: manga1
+  m_Name: manga2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetBag: {fileID: 11400000, guid: 172f0e08ca9e6574c831f62c91d6e5a9, type: 2}
-  targetItem: {fileID: 11400000, guid: 5b012e89499d2554990f9a68b5c2e2bf, type: 2}
+  targetItem: {fileID: 11400000, guid: e29bf5cc92daa794e98b3464679cd7d8, type: 2}
 --- !u!114 &39253826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,7 +319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetBag: {fileID: 11400000, guid: 525da291ca5a4c14b99aa56cefe73075, type: 2}
-  targetItem: {fileID: 11400000, guid: 5b012e89499d2554990f9a68b5c2e2bf, type: 2}
+  targetItem: {fileID: 11400000, guid: e29bf5cc92daa794e98b3464679cd7d8, type: 2}
 --- !u!1 &52546779
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,7 +964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getMangaBag: {fileID: 11400000, guid: 3a8bb299e21d0044a8c2542bdc13210b, type: 2}
-  Misunder: {fileID: 1445310191}
+  character: {fileID: 1445310191}
 --- !u!1 &299681404
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,7 +1086,7 @@ GameObject:
   - component: {fileID: 424282614}
   - component: {fileID: 424282615}
   m_Layer: 0
-  m_Name: manga2
+  m_Name: manga1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1122,7 +1122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetBag: {fileID: 11400000, guid: 172f0e08ca9e6574c831f62c91d6e5a9, type: 2}
-  targetItem: {fileID: 11400000, guid: e29bf5cc92daa794e98b3464679cd7d8, type: 2}
+  targetItem: {fileID: 11400000, guid: 5b012e89499d2554990f9a68b5c2e2bf, type: 2}
 --- !u!114 &424282615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1136,7 +1136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetBag: {fileID: 11400000, guid: 525da291ca5a4c14b99aa56cefe73075, type: 2}
-  targetItem: {fileID: 11400000, guid: e29bf5cc92daa794e98b3464679cd7d8, type: 2}
+  targetItem: {fileID: 11400000, guid: 5b012e89499d2554990f9a68b5c2e2bf, type: 2}
 --- !u!1 &465990831
 GameObject:
   m_ObjectHideFlags: 0
@@ -1337,7 +1337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getMangaBag: {fileID: 11400000, guid: d28e867d82d364843bd275e041038a06, type: 2}
-  Misunder: {fileID: 1954502878}
+  character: {fileID: 1954502878}
 --- !u!1 &673621205
 GameObject:
   m_ObjectHideFlags: 0
@@ -3434,7 +3434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5bc094b0a2f5e74d8ebaeb1d720b190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mangaItem: {fileID: 11400000, guid: 5b012e89499d2554990f9a68b5c2e2bf, type: 2}
+  mangaItem: {fileID: 11400000, guid: e29bf5cc92daa794e98b3464679cd7d8, type: 2}
   playerBag: {fileID: 11400000, guid: bcac1d32e3ae5fe409deafcb15c76365, type: 2}
 --- !u!1 &1275313500
 GameObject:
@@ -3706,6 +3706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1445310193}
   - component: {fileID: 1445310192}
+  - component: {fileID: 1445310194}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -3783,6 +3784,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 286711157}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1445310194
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445310191}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 714c068a13ac54478b6919ccca119e62, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1463089952
 GameObject:
   m_ObjectHideFlags: 0
@@ -4356,7 +4379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5bc094b0a2f5e74d8ebaeb1d720b190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mangaItem: {fileID: 11400000, guid: e29bf5cc92daa794e98b3464679cd7d8, type: 2}
+  mangaItem: {fileID: 11400000, guid: 5b012e89499d2554990f9a68b5c2e2bf, type: 2}
   playerBag: {fileID: 11400000, guid: bcac1d32e3ae5fe409deafcb15c76365, type: 2}
 --- !u!114 &1707908702
 MonoBehaviour:
@@ -4940,7 +4963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5bc094b0a2f5e74d8ebaeb1d720b190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mangaItem: {fileID: 11400000, guid: ff947e3d748c63742b818d60ec67df7b, type: 2}
+  mangaItem: {fileID: 11400000, guid: 38035f11d6155d84bbf92058af80ca84, type: 2}
   playerBag: {fileID: 11400000, guid: bcac1d32e3ae5fe409deafcb15c76365, type: 2}
 --- !u!114 &1943313995
 MonoBehaviour:
@@ -5207,6 +5230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1954502880}
   - component: {fileID: 1954502879}
+  - component: {fileID: 1954502881}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -5284,6 +5308,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 568361502}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1954502881
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954502878}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 714c068a13ac54478b6919ccca119e62, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2088538057
 GameObject:
   m_ObjectHideFlags: 0
