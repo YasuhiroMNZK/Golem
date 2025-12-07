@@ -17,3 +17,5 @@ MonoBehaviour:
   mangaInfo: "\u30DE\u30F3\u30AC\uFF19\u306E\u5185\u5BB9"
   mangaText: 
   misunder: {fileID: 0}
+  animationClips: {fileID: 0}
+  NPCText: "\u7B49\u4FA1\u4EA4\u63DB\u3060"

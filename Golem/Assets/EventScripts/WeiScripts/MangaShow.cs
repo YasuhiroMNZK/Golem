@@ -10,6 +10,7 @@ public class MangaShow : MonoBehaviour
     public GameObject TitleShow;
     public GameObject InfoShow;
     public GameObject CoverShow; // 画像投影用GameObject
+    public GameObject TextShow;
 
     // Unityインスペクターで指定するBag要素の序列
     public int bagItemIndex = 0;
@@ -52,6 +53,18 @@ public class MangaShow : MonoBehaviour
         }
     }
 
+    public void ShowText()
+    {
+        if (getMangaBag == null || getMangaBag.itemList == null || getMangaBag.itemList.Count == 0) return;
+        if (TextShow == null) return;
+        var targetText = TextShow.GetComponent<Text>();
+        if (targetText != null)
+        {
+            ShowMangaText(bagItemIndex, targetText);
+            return;
+        }
+    }
+
     // Text用
     public void ShowMangaTitle(int index, Text targetText)
     {
@@ -85,6 +98,18 @@ public class MangaShow : MonoBehaviour
         if (item != null && targetImage != null)
         {
             targetImage.sprite = item.mangaCover;
+        }
+    }
+
+    public void ShowMangaText(int index, Text targetText)
+    {
+        if (getMangaBag == null || getMangaBag.itemList == null) return;
+        if (index < 0 || index >= getMangaBag.itemList.Count) return;
+
+        Item item = getMangaBag.itemList[index];
+        if (item != null && targetText != null)
+        {
+            targetText.text = $"{item.NPCText}";
         }
     }
     

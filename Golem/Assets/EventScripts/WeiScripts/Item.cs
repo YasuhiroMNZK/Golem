@@ -15,4 +15,7 @@ public class Item : ScriptableObject
     public Sprite misunder;
 
     public AnimationClip animationClips;
+
+    [TextArea]
+    public string NPCText;
 }

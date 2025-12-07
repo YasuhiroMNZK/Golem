@@ -18,3 +18,4 @@ MonoBehaviour:
   mangaText: 
   misunder: {fileID: 21300000, guid: d63edb2bfc4214f37a047f743fff888b, type: 3}
   animationClips: {fileID: 0}
+  NPCText: 

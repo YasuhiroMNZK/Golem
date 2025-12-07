@@ -10,7 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c98784b745f72ac46a9e7fdb220fd0aa, type: 3}
-  m_Name: SchoolPlace3
+  m_Name: TextChange
   m_EditorClassIdentifier: 
   itemList:
+  - {fileID: 11400000, guid: ee7943526ec3a044c810c7fb56731f58, type: 2}
+  - {fileID: 11400000, guid: 38035f11d6155d84bbf92058af80ca84, type: 2}
   - {fileID: 11400000, guid: 9eee84aa4985c7b44924303661d19be5, type: 2}
+  - {fileID: 11400000, guid: 3467f91dfc80a46ec9a59c433ab5073c, type: 2}
