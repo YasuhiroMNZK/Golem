@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c98784b745f72ac46a9e7fdb220fd0aa, type: 3}
   m_Name: SpaceCenterPlace3
   m_EditorClassIdentifier: 
-  itemList:
-  - {fileID: 11400000, guid: 9eee84aa4985c7b44924303661d19be5, type: 2}
+  itemList: []
