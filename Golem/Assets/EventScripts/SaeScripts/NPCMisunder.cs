@@ -7,25 +7,30 @@ public class NPCMisunder : MonoBehaviour
 
     void Start()
     {
-        if (getMangaBag?.itemList?.Count > 0)
-        {
-            Item item = getMangaBag.itemList[0];
+    //     // バッグやアイテムリストが存在しない場合は何もしない
+    //     if (getMangaBag?.itemList?.Count <= 0) return;
+        
+    //    Item item = getMangaBag.itemList[0];
+        
+    //     // アイテムが存在しない場合は何もしない
+    //     if (item == null) return;
 
-            // アニメーションクリップが設定されている場合はアニメーション実行
-            if (item?.animationClips != null)
-            {
-                SetAnimation(item);
-            }
-            // アニメーションクリップがなく、スプライトがある場合はスプライト設定
-            else if (item?.misunder != null)
-            {
-                SetSprite(item);
-            }
-        }
+    //     // アニメーションクリップが設定されている場合はアニメーション実行
+    //     if (item.animationClips != null)
+    //     {
+    //         SetAnimation(item);
+    //     }
+    //     // アニメーションクリップがなく、スプライトがある場合はスプライト設定
+    //     else if (item.misunder != null)
+    //     {
+    //         SetSprite(item);
+    //     }
+    //     // どちらも設定されていない場合は何もしない
     }
 
-    void SetSprite(Item item)
+    public void SetSprite()
     {
+        Item item = getMangaBag.itemList[0];
         if (character == null || item?.misunder == null) return;
 
         // SpriteRendererを取得
@@ -43,8 +48,9 @@ public class NPCMisunder : MonoBehaviour
         spriteRenderer.sprite = item.misunder;
     }
 
-    void SetAnimation(Item item)
+    public void SetAnimation()
     {
+        Item item = getMangaBag.itemList[0];
         var animator = character?.GetComponent<Animator>();
         if (animator?.runtimeAnimatorController != null)
         {

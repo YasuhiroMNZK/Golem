@@ -1074,6 +1074,7 @@ GameObject:
   - component: {fileID: 720802856}
   - component: {fileID: 720802859}
   - component: {fileID: 720802860}
+  - component: {fileID: 720802861}
   m_Layer: 5
   m_Name: Button (Legacy)
   m_TagString: Untagged
@@ -1148,6 +1149,18 @@ MonoBehaviour:
       - m_Target: {fileID: 720802859}
         m_TargetAssemblyTypeName: MangaMove, Assembly-CSharp
         m_MethodName: MoveManga
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 720802861}
+        m_TargetAssemblyTypeName: MangaCopy, Assembly-CSharp
+        m_MethodName: CopyManga
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1269,7 +1282,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f209835bb7ee14647852b821244fb3d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Settlement
+  sceneName: Map
+--- !u!114 &720802861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720802854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1157f756d067b3d4da1fc25ca5518485, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bagFrom: {fileID: 11400000, guid: aa0be80aa22ad3f43a30c25b40f58142, type: 2}
+  bagTo: {fileID: 11400000, guid: f2f8e5bbc3e90475391dd84368910f40, type: 2}
 --- !u!1 &797763660
 GameObject:
   m_ObjectHideFlags: 0
@@ -3409,6 +3436,7 @@ GameObject:
   - component: {fileID: 2014781954}
   - component: {fileID: 2014781962}
   - component: {fileID: 2014781963}
+  - component: {fileID: 2014781967}
   - component: {fileID: 2014781964}
   - component: {fileID: 2014781965}
   - component: {fileID: 2014781966}
@@ -3466,6 +3494,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2014781967}
+        m_TargetAssemblyTypeName: BagClear, Assembly-CSharp
+        m_MethodName: ClearBag
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3799,6 +3839,19 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9a4338b2e15931c49b0f314935eff903, type: 2}
   - {fileID: 11400000, guid: 30f80516c9be87d498a5755399e471e7, type: 2}
   BagFrom: {fileID: 11400000, guid: aa0be80aa22ad3f43a30c25b40f58142, type: 2}
+--- !u!114 &2014781967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014781953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d326d88244543ac90e8de39acdead9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetBag: {fileID: 11400000, guid: f2f8e5bbc3e90475391dd84368910f40, type: 2}
 --- !u!1 &2079046841
 GameObject:
   m_ObjectHideFlags: 0
