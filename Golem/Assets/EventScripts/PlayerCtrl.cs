@@ -20,13 +20,15 @@ public class PlayerCtrl : MonoBehaviour
     [SerializeField] bool canRun = true;
     [SerializeField] bool canJump = true;
     [SerializeField] bool FPSMove = false;
-
     [SerializeField] bool useAnimationRotate = false;
 
     [SerializeField] float BeScale = 1;
+    [SerializeField] float NoScale = 1;
 
+    [SerializeField] bool canScale = true;
     Vector3 forwardVec;
     Vector3 rightVec;
+
 
     // Start is called before the first frame update
     void Start()
@@ -163,6 +165,10 @@ public class PlayerCtrl : MonoBehaviour
                 }
             }
         }
+         if (canScale == true)
+            transform.localScale = new Vector3(BeScale, BeScale, BeScale);
+        else if (canScale == false)
+            transform.localScale = new Vector3(NoScale, NoScale, NoScale);
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
@@ -183,10 +189,17 @@ public class PlayerCtrl : MonoBehaviour
     }
 
 
+
+    public void DisScale()
+    {
+        canScale = false;
+    }
+
     public void OnScale()
     {
-        transform.localScale = new Vector3(BeScale, BeScale, BeScale);
+       canScale = true;
     }
+    
     
     //private void OnTriggerEnter(Collider other)
     //{
