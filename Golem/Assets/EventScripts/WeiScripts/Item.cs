@@ -10,11 +10,13 @@ public class Item : ScriptableObject
     public string mangaInfo;
 
     [TextArea]
-    public string mangaText;
+    public string mangaLog;
+    [TextArea]
+    public string mangaExplain;
 
-    public Sprite misunder;
+    public Sprite NPCvisualChange;
 
-    public AnimationClip animationClips;
+    public AnimationClip NPCanimation;
 
     [TextArea]
     public string NPCText;

@@ -10,7 +10,9 @@ public class MangaShow : MonoBehaviour
     public GameObject TitleShow;
     public GameObject InfoShow;
     public GameObject CoverShow; // 画像投影用GameObject
-    public GameObject TextShow;
+    public GameObject LogShow;
+    public GameObject explainShow;
+    public GameObject NPCTextShow;
 
     // Unityインスペクターで指定するBag要素の序列
     public int bagItemIndex = 0;
@@ -23,7 +25,7 @@ public class MangaShow : MonoBehaviour
         var targetText = TitleShow.GetComponent<Text>();
         if (targetText != null)
         {
-            ShowMangaTitle(bagItemIndex, targetText);
+            Title(bagItemIndex, targetText);
             return;
         }
     }
@@ -36,37 +38,61 @@ public class MangaShow : MonoBehaviour
         var targetText = InfoShow.GetComponent<Text>();
         if (targetText != null)
         {
-            ShowMangaInfo(bagItemIndex, targetText);
+            Info(bagItemIndex, targetText);
             return;
         }
     }
 
-    public void ShowImage()
+    public void ShowCover()
     {
         if (getMangaBag == null || getMangaBag.itemList == null || getMangaBag.itemList.Count == 0) return;
         if (CoverShow == null) return;
         var targetImage = CoverShow.GetComponent<Image>();
         if (targetImage != null)
         {
-            ShowMangaImage(bagItemIndex, targetImage);
+            Cover(bagItemIndex, targetImage);
             return;
         }
     }
 
-    public void ShowText()
+    public void ShowLog()
     {
         if (getMangaBag == null || getMangaBag.itemList == null || getMangaBag.itemList.Count == 0) return;
-        if (TextShow == null) return;
-        var targetText = TextShow.GetComponent<Text>();
+        if (LogShow == null) return;
+        var targetText = LogShow.GetComponent<Text>();
         if (targetText != null)
         {
-            ShowMangaText(bagItemIndex, targetText);
+            Log(bagItemIndex, targetText);
+            return;
+        }
+    }
+
+    public void ShowExplain()
+    {
+        if (getMangaBag == null || getMangaBag.itemList == null || getMangaBag.itemList.Count == 0) return;
+        if (explainShow == null) return;
+        var targetText = explainShow.GetComponent<Text>();
+        if (targetText != null)
+        {
+            Explain(bagItemIndex, targetText);
+            return;
+        }
+    }
+
+    public void ShowNPCText()
+    {
+        if (getMangaBag == null || getMangaBag.itemList == null || getMangaBag.itemList.Count == 0) return;
+        if (NPCTextShow == null) return;
+        var targetText = NPCTextShow.GetComponent<Text>();
+        if (targetText != null)
+        {
+            NPCText(bagItemIndex, targetText);
             return;
         }
     }
 
     // Text用
-    public void ShowMangaTitle(int index, Text targetText)
+    public void Title(int index, Text targetText)
     {
         if (getMangaBag == null || getMangaBag.itemList == null) return;
         if (index < 0 || index >= getMangaBag.itemList.Count) return;
@@ -77,7 +103,7 @@ public class MangaShow : MonoBehaviour
             targetText.text = $"『{item.mangaName}』をゲットした！！"; // mangaTitleはItemクラスのstringプロパティと仮定
         }
     }
-    public void ShowMangaInfo(int index, Text targetText)
+    public void Info(int index, Text targetText)
     {
         if (getMangaBag == null || getMangaBag.itemList == null) return;
         if (index < 0 || index >= getMangaBag.itemList.Count) return;
@@ -89,7 +115,7 @@ public class MangaShow : MonoBehaviour
         }
     }
 
-    public void ShowMangaImage(int index, Image targetImage)
+    public void Cover(int index, Image targetImage)
     {
         if (getMangaBag == null || getMangaBag.itemList == null) return;
         if (index < 0 || index >= getMangaBag.itemList.Count) return;
@@ -101,7 +127,31 @@ public class MangaShow : MonoBehaviour
         }
     }
 
-    public void ShowMangaText(int index, Text targetText)
+    public void Log(int index, Text targetText)
+    {
+        if (getMangaBag == null || getMangaBag.itemList == null) return;
+        if (index < 0 || index >= getMangaBag.itemList.Count) return;
+
+        Item item = getMangaBag.itemList[index];
+        if (item != null && targetText != null)
+        {
+            targetText.text = $"{item.mangaLog}";
+        }
+    }
+
+    public void Explain(int index, Text targetText)
+    {
+        if (getMangaBag == null || getMangaBag.itemList == null) return;
+        if (index < 0 || index >= getMangaBag.itemList.Count) return;
+
+        Item item = getMangaBag.itemList[index];
+        if (item != null && targetText != null)
+        {
+            targetText.text = $"{item.mangaExplain}";
+        }
+    }
+
+    public void NPCText(int index, Text targetText)
     {
         if (getMangaBag == null || getMangaBag.itemList == null) return;
         if (index < 0 || index >= getMangaBag.itemList.Count) return;

@@ -1262,7 +1262,9 @@ MonoBehaviour:
   TitleShow: {fileID: 0}
   InfoShow: {fileID: 0}
   CoverShow: {fileID: 0}
-  TextShow: {fileID: 1855380067}
+  LogShow: {fileID: 0}
+  explainShow: {fileID: 0}
+  NPCTextShow: {fileID: 0}
   bagItemIndex: 0
 --- !u!114 &286711162
 MonoBehaviour:
@@ -1716,7 +1718,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: ec98fcf08e327468e832e91baf63646a, type: 3}
-    m_FontSize: 16
+    m_FontSize: 0
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1724,8 +1726,8 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "\u8272\u3093\u306A\u5834\u6240\u3092\u8ABF\u3079\u3066\u6F2B\u753B\u3092\u898B\u3064\u3051\u3088\u3046"
 --- !u!222 &465990834
@@ -2012,7 +2014,9 @@ MonoBehaviour:
   TitleShow: {fileID: 0}
   InfoShow: {fileID: 0}
   CoverShow: {fileID: 0}
-  TextShow: {fileID: 1692176216}
+  LogShow: {fileID: 0}
+  explainShow: {fileID: 0}
+  NPCTextShow: {fileID: 0}
   bagItemIndex: 0
 --- !u!1 &673621205
 GameObject:
@@ -6937,7 +6941,9 @@ MonoBehaviour:
   TitleShow: {fileID: 1275313500}
   InfoShow: {fileID: 890235401}
   CoverShow: {fileID: 9175086590886461928}
-  TextShow: {fileID: 0}
+  LogShow: {fileID: 0}
+  explainShow: {fileID: 0}
+  NPCTextShow: {fileID: 0}
   bagItemIndex: 0
 --- !u!1 &2143390664
 GameObject:

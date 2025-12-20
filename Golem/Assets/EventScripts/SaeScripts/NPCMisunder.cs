@@ -31,7 +31,7 @@ public class NPCMisunder : MonoBehaviour
     public void SetSprite()
     {
         Item item = getMangaBag.itemList[0];
-        if (character == null || item?.misunder == null) return;
+        if (character == null || item?.NPCvisualChange == null) return;
 
         // SpriteRendererを取得
         var spriteRenderer = character.GetComponent<SpriteRenderer>();
@@ -45,7 +45,7 @@ public class NPCMisunder : MonoBehaviour
         }
 
         // スプライトを設定
-        spriteRenderer.sprite = item.misunder;
+        spriteRenderer.sprite = item.NPCvisualChange;
     }
 
     public void SetAnimation()
@@ -62,7 +62,7 @@ public class NPCMisunder : MonoBehaviour
             if (clips.Length > 0)
             {
                 // 最初のクリップをアイテムのアニメーションクリップで上書き
-                overrideController[clips[0]] = item.animationClips;
+                overrideController[clips[0]] = item.NPCanimation;
                 // 上書きしたコントローラーをAnimatorに設定
                 animator.runtimeAnimatorController = overrideController;
                 // アニメーションを再生

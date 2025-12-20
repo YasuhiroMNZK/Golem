@@ -15,7 +15,8 @@ MonoBehaviour:
   mangaName: "\u30AB\u30CE\u30B8"
   mangaCover: {fileID: 21300000, guid: 5fa8543f78fdf50488c07728d7265bd1, type: 3}
   mangaInfo: "\u30DE\u30F3\u30AC\uFF11\uFF13\u306E\u5185\u5BB9"
-  mangaText: 
-  misunder: {fileID: 0}
-  animationClips: {fileID: 0}
+  mangaLog: "\u30AE\u30E3\u30F3\u30D6\u30EB\u30DE\u30F3\u30AC\u3060\uFF01\u30AB\u30B1\u30B4\u30C8\uFF1F\u3063\u3066\u306A\u3093\u3060\u304B\u6016\u3044\u2026"
+  mangaExplain: 
+  NPCvisualChange: {fileID: 0}
+  NPCanimation: {fileID: 0}
   NPCText: "\u3056\u308F\u2026"
