@@ -2927,7 +2927,9 @@ MonoBehaviour:
   TitleShow: {fileID: 1659679349}
   InfoShow: {fileID: 758720460}
   CoverShow: {fileID: 437573568}
-  TextShow: {fileID: 0}
+  LogShow: {fileID: 0}
+  explainShow: {fileID: 0}
+  NPCTextShow: {fileID: 0}
   bagItemIndex: 0
 --- !u!224 &1177681642
 RectTransform:
@@ -4990,7 +4992,9 @@ MonoBehaviour:
   TitleShow: {fileID: 0}
   InfoShow: {fileID: 0}
   CoverShow: {fileID: 0}
-  TextShow: {fileID: 568033503}
+  LogShow: {fileID: 0}
+  explainShow: {fileID: 0}
+  NPCTextShow: {fileID: 0}
   bagItemIndex: 0
 --- !u!114 &1670057601
 MonoBehaviour:
@@ -5862,7 +5866,7 @@ MonoBehaviour:
   movedirOffset: 0
   zEnable: 1
   xEnable: 1
-  canRun: 1
+  canRun: 0
   canJump: 0
   FPSMove: 0
   useAnimationRotate: 1
@@ -6542,7 +6546,9 @@ MonoBehaviour:
   TitleShow: {fileID: 0}
   InfoShow: {fileID: 0}
   CoverShow: {fileID: 0}
-  TextShow: {fileID: 1899005461}
+  LogShow: {fileID: 0}
+  explainShow: {fileID: 0}
+  NPCTextShow: {fileID: 0}
   bagItemIndex: 0
 --- !u!114 &2043104087
 MonoBehaviour:
