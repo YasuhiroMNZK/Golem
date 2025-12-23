@@ -48,6 +48,11 @@ public class PlayerCtrl : MonoBehaviour
     Vector3 beforePos;
     Vector3 floorOffset;
 
+    void Awake()
+    {
+        // Set the target frame rate
+        Application.targetFrameRate = 60;
+    }
 
 
     // Update is called once per frame
