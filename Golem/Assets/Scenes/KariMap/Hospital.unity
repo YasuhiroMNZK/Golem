@@ -3646,6 +3646,7 @@ MonoBehaviour:
   TitleShow: {fileID: 1659679349}
   InfoShow: {fileID: 758720460}
   CoverShow: {fileID: 437573568}
+  KaisekiShow: {fileID: 0}
   LogShow: {fileID: 0}
   explainShow: {fileID: 0}
   NPCTextShow: {fileID: 0}
@@ -3755,6 +3756,7 @@ MonoBehaviour:
   TitleShow: {fileID: 867345410}
   InfoShow: {fileID: 0}
   CoverShow: {fileID: 0}
+  KaisekiShow: {fileID: 0}
   LogShow: {fileID: 0}
   explainShow: {fileID: 0}
   NPCTextShow: {fileID: 0}
@@ -5649,6 +5651,7 @@ MonoBehaviour:
   TitleShow: {fileID: 0}
   InfoShow: {fileID: 0}
   CoverShow: {fileID: 0}
+  KaisekiShow: {fileID: 0}
   LogShow: {fileID: 0}
   explainShow: {fileID: 0}
   NPCTextShow: {fileID: 904375731}
@@ -6679,7 +6682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bagFrom: {fileID: 11400000, guid: bcac1d32e3ae5fe409deafcb15c76365, type: 2}
-  bagTo: {fileID: 11400000, guid: c3507b43001345e40856c331f47e5064, type: 2}
+  bagTo: {fileID: 11400000, guid: ee831ccaf7d4a47dc914500ea94622f5, type: 2}
 --- !u!114 &1845025092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7262,6 +7265,7 @@ MonoBehaviour:
   TitleShow: {fileID: 0}
   InfoShow: {fileID: 0}
   CoverShow: {fileID: 0}
+  KaisekiShow: {fileID: 0}
   LogShow: {fileID: 0}
   explainShow: {fileID: 0}
   NPCTextShow: {fileID: 904375731}
