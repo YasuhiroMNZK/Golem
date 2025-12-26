@@ -10,6 +10,7 @@ public class MangaShow : MonoBehaviour
     public GameObject TitleShow;
     public GameObject InfoShow;
     public GameObject CoverShow; // 画像投影用GameObject
+    public GameObject KaisekiShow;
     public GameObject LogShow;
     public GameObject explainShow;
     public GameObject NPCTextShow;
@@ -55,7 +56,7 @@ public class MangaShow : MonoBehaviour
         }
     }
 
-    public void ShowLog()
+        public void ShowLog()
     {
         if (getMangaBag == null || getMangaBag.itemList == null || getMangaBag.itemList.Count == 0) return;
         if (LogShow == null) return;
@@ -63,6 +64,18 @@ public class MangaShow : MonoBehaviour
         if (targetText != null)
         {
             Log(bagItemIndex, targetText);
+            return;
+        }
+    }
+
+    public void ShowKaiseki()
+    {
+        if (getMangaBag == null || getMangaBag.itemList == null || getMangaBag.itemList.Count == 0) return;
+        if (KaisekiShow == null) return;
+        var targetText = KaisekiShow.GetComponent<Text>();
+        if (targetText != null)
+        {
+            Kaiseki(bagItemIndex, targetText);
             return;
         }
     }
@@ -127,6 +140,17 @@ public class MangaShow : MonoBehaviour
         }
     }
 
+    public void Kaiseki(int index, Text targetText)
+    {
+        if (getMangaBag == null || getMangaBag.itemList == null) return;
+        if (index < 0 || index >= getMangaBag.itemList.Count) return;
+
+        Item item = getMangaBag.itemList[index];
+        if (item != null && targetText != null)
+        {
+            targetText.text = $"『{item.mangaName}』を解析した！！"; // mangaTitleはItemクラスのstringプロパティと仮定
+        }
+    }
     public void Log(int index, Text targetText)
     {
         if (getMangaBag == null || getMangaBag.itemList == null) return;
