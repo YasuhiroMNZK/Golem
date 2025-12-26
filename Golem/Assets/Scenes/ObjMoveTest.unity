@@ -249,6 +249,7 @@ MonoBehaviour:
   followX: 1
   followY: 0
   followZ: 0
+  sameDirection: 1
   followFactor: 1
 --- !u!54 &13838409
 Rigidbody:
@@ -396,6 +397,7 @@ MonoBehaviour:
   followX: 0
   followY: 0
   followZ: 1
+  sameDirection: 1
   followFactor: 1
 --- !u!1 &15910977
 GameObject:

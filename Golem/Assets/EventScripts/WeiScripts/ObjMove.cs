@@ -14,6 +14,8 @@ public class ObjMove : MonoBehaviour
     [SerializeField] private bool followY = false;
     [SerializeField] private bool followZ = false;
 
+    [SerializeField] private bool sameDirection = false;
+
     /// <summary>
     /// 追従の強さ（1 で等倍、0.5 で半分など）
     /// </summary>
@@ -76,11 +78,19 @@ public class ObjMove : MonoBehaviour
         // 内積が正なら「delta と同じ側（= target の進行方向側）にこのオブジェクトがある」
         float dot = Vector3.Dot(delta.normalized, toSelf.normalized);
 
-        if (dot > 0f)
+        if (sameDirection)
         {
-            // 同じ方向に移動させる（followFactor で強さ調整）
-            transform.position += delta * followFactor;
+            if (dot > 0f)
+            {
+                // 同じ方向に移動させる（followFactor で強さ調整）
+                transform.position += delta * followFactor;
+            }
         }
+        else
+        {
+                transform.position += delta * followFactor;
+        }
+
 
         // 次フレーム用に位置を保存
         _lastTargetPosition = target.position;

@@ -1761,7 +1761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   events: []
-  gameFlags: 00000000
+  gameFlags: 00000000000000
 --- !u!1 &1340333359
 GameObject:
   m_ObjectHideFlags: 0
