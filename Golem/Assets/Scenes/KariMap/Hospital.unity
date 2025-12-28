@@ -1490,18 +1490,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1809367267}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 1809367254}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
@@ -3024,9 +3012,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1809367267}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Rebind
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3491,7 +3479,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8272\u3093\u306A\u5834\u6240\u3092\u8ABF\u3079\u3066\u6F2B\u753B\u3092\u898B\u3064\u3051\u3088\u3046"
+  m_Text: "\u8272\u3093\u306A\u5834\u6240\u3092\u8ABF\u3079\u3066\u6F2B\u753B\u3092\u898B\u3064\u3051\u3088\u3046\uFF01"
 --- !u!222 &1109186079
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4077,7 +4065,7 @@ GameObject:
   - component: {fileID: 1313842508}
   - component: {fileID: 1313842510}
   m_Layer: 0
-  m_Name: manga15
+  m_Name: manga8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4096,7 +4084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetBag: {fileID: 11400000, guid: 172f0e08ca9e6574c831f62c91d6e5a9, type: 2}
-  targetItem: {fileID: 11400000, guid: 6ddd7062ddd3a4f9283888afff0ec7fc, type: 2}
+  targetItem: {fileID: 11400000, guid: 767cc5908888ef9428dec71c7cef80eb, type: 2}
 --- !u!4 &1313842509
 Transform:
   m_ObjectHideFlags: 0
@@ -4127,7 +4115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetBag: {fileID: 11400000, guid: 525da291ca5a4c14b99aa56cefe73075, type: 2}
-  targetItem: {fileID: 11400000, guid: 6ddd7062ddd3a4f9283888afff0ec7fc, type: 2}
+  targetItem: {fileID: 11400000, guid: 767cc5908888ef9428dec71c7cef80eb, type: 2}
 --- !u!1 &1320639389
 GameObject:
   m_ObjectHideFlags: 0
@@ -5386,18 +5374,6 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1809367268}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1809367267}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -7377,7 +7353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5bc094b0a2f5e74d8ebaeb1d720b190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mangaItem: {fileID: 11400000, guid: 6ddd7062ddd3a4f9283888afff0ec7fc, type: 2}
+  mangaItem: {fileID: 11400000, guid: 767cc5908888ef9428dec71c7cef80eb, type: 2}
   playerBag: {fileID: 11400000, guid: bcac1d32e3ae5fe409deafcb15c76365, type: 2}
 --- !u!114 &2050838815
 MonoBehaviour:
@@ -7503,9 +7479,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1809367267}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Rebind
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7818,9 +7794,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1809367267}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Rebind
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8218,9 +8194,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1809367267}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Rebind
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
