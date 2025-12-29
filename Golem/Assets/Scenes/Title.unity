@@ -495,6 +495,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ba89dbd5c14d9694e85ef5cfd910c7ee, type: 2}
   - {fileID: 11400000, guid: 0a98b8fd815f03741b4a76485a27c997, type: 2}
   - {fileID: 11400000, guid: 0b12dc457f9b40e4e83128cbccce0836, type: 2}
+  - {fileID: 11400000, guid: d8ce5439709b04c7986d9389181ce7e9, type: 2}
   BagFrom: {fileID: 11400000, guid: aa0be80aa22ad3f43a30c25b40f58142, type: 2}
 --- !u!114 &456958689
 MonoBehaviour:
@@ -593,6 +594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3acf161f3dbd3ee4cbae10bcd99b0c05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interval: 1
 --- !u!82 &488991725
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1727,6 +1729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3acf161f3dbd3ee4cbae10bcd99b0c05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interval: 1
 --- !u!82 &1747873521
 AudioSource:
   m_ObjectHideFlags: 0
