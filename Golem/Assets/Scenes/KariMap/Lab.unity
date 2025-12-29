@@ -4203,7 +4203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  jumppow: 7
+  jumppow: 7.5
   fallspd: 2
   useCameraDir: 1
   movedirOffset: 0
