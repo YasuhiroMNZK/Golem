@@ -397,6 +397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3acf161f3dbd3ee4cbae10bcd99b0c05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interval: 1
 --- !u!82 &182580426
 AudioSource:
   m_ObjectHideFlags: 0
@@ -410,7 +411,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 6a16040a622fc4e21a20b7b62437d173, type: 3}
   m_Resource: {fileID: 8300000, guid: 6a16040a622fc4e21a20b7b62437d173, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -648,6 +649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3acf161f3dbd3ee4cbae10bcd99b0c05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interval: 1
 --- !u!82 &458523878
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2029,6 +2031,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 182580425}
+        m_TargetAssemblyTypeName: PlayAudio, Assembly-CSharp
+        m_MethodName: Action
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   keyname: Fire1
 --- !u!1 &979230692
 GameObject:
@@ -2451,6 +2465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3acf161f3dbd3ee4cbae10bcd99b0c05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interval: 1
 --- !u!82 &1293060178
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3329,9 +3344,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1885496110}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Rebind
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3885,7 +3900,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1293060177}
         m_TargetAssemblyTypeName: PlayAudio, Assembly-CSharp
-        m_MethodName: Action
+        m_MethodName: KeepAction
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4524,7 +4539,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42ec5d9441ddd44df95404750ac43039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCtrl: {fileID: 1885496111}
   walkSoundInterval: 0.6
+  runSoundInterval: 0.6
+  walkSound: {fileID: 8300000, guid: 37cacfdbe71684f2e9f699a3b238a945, type: 3}
+  runSound: {fileID: 8300000, guid: 72a57f1cb53ac4646ac6abce9e860377, type: 3}
+  jumpSound: {fileID: 8300000, guid: 869bed8ec49ba4b86bb316b7d6fde52e, type: 3}
 --- !u!82 &1885496115
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5622,7 +5642,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 537616906}
   - {fileID: 1293060179}
-  - {fileID: 182580427}
   - {fileID: 1806965758}
   - {fileID: 1514158717}
   - {fileID: 1885496129}
@@ -5633,3 +5652,4 @@ SceneRoots:
   - {fileID: 844232543}
   - {fileID: 159680846}
   - {fileID: 1840364718}
+  - {fileID: 182580427}

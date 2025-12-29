@@ -27,19 +27,19 @@ EditorBuildSettings:
     path: Assets/Scenes/KariMap/ElectricTown.unity
     guid: 9994843684dda044d9a8accba9e51ffe
   - enabled: 1
-    path: Assets/Scenes/KariMap/Farm.unity
+    path: Assets/Scenes/KariMap/NoUse/Farm.unity
     guid: daae7ebdb2b013044bdbb7d59119df49
   - enabled: 1
     path: Assets/Scenes/KariMap/Hospital.unity
     guid: b0575756bcdb2734cb4cb838dd31bcaf
   - enabled: 1
-    path: Assets/Scenes/KariMap/Library.unity
+    path: Assets/Scenes/KariMap/NoUse/Library.unity
     guid: 17d494175662d0e48a1cc1f7ed4862b4
   - enabled: 1
     path: Assets/Scenes/KariMap/School.unity
     guid: bd45fe5b9b476ff4e9941c554f331370
   - enabled: 1
-    path: Assets/Scenes/KariMap/SpaceCenter.unity
+    path: Assets/Scenes/KariMap/NoUse/SpaceCenter.unity
     guid: 3710fc1b9a0ebfd4d919cf0496e40648
   - enabled: 1
     path: Assets/Scenes/KariMap/test3.unity

@@ -19,6 +19,10 @@ public class PlayerCtrl : MonoBehaviour
     [SerializeField] bool xEnable = true;
     [SerializeField] bool canRun = true;
     [SerializeField] bool canJump = true;
+      // アクセス用プロパティ
+    public bool CanRun => canRun;
+    public bool CanJump => canJump;
+
     [SerializeField] bool FPSMove = false;
     [SerializeField] bool useAnimationRotate = false;
 
