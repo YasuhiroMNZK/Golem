@@ -705,7 +705,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u300C\u540D\u524D\u3092\u4ED8\u3051\u305F\u3002\u3007\u3007\uFF08\u30D7\u30EC\u30A4\u30E4\u30FC\u540D\uFF09\u3002\u3044\u3044\u540D\u524D\u3060\u3068\u601D\u3046\u300D"
+  m_Text: "\u300C\u540D\u524D\u3092\u4ED8\u3051\u305F\u3002{name}\u3002\u3044\u3044\u540D\u524D\u3060\u3068\u601D\u3046\u300D"
 --- !u!222 &74914866
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5704,7 +5704,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u300C\u30DC\u30AF\u3001\u3007\u3007\u3063\u3066\u3044\u3046\u3093\u3060\uFF01\u300D\r\n"
+  m_Text: "\u300C\u30DC\u30AF\u3001{name}\u3063\u3066\u3044\u3046\u3093\u3060\uFF01\u300D\r\n"
 --- !u!222 &1286768461
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7382,7 +7382,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u300C\u3007\u3007\uFF08\u30D7\u30EC\u30A4\u30E4\u30FC\u306E\u540D\u524D\uFF09...\u3007\u3007...\u30DC\u30AF\u306E\u540D\u524D...\uFF01\u300D\r\n"
+  m_Text: "\u300C{name}...{name}...\u30DC\u30AF\u306E\u540D\u524D...\uFF01\u300D\r\n"
 --- !u!222 &1848288146
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7848,6 +7848,9 @@ GameObject:
   - component: {fileID: 2092848129}
   - component: {fileID: 2092848128}
   - component: {fileID: 2092848130}
+  - component: {fileID: 2092848134}
+  - component: {fileID: 2092848133}
+  - component: {fileID: 2092848132}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -8171,6 +8174,48 @@ MonoBehaviour:
   explainShow: {fileID: 0}
   NPCTextShow: {fileID: 0}
   bagItemIndex: 0
+--- !u!114 &2092848132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092848122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98e638fe8d571c7478eefdbf91280d1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetItem: {fileID: 11400000, guid: c9bb95367cdd8a04ca5d56c9cfe9b83d, type: 2}
+  nameText: {fileID: 1286768460}
+--- !u!114 &2092848133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092848122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98e638fe8d571c7478eefdbf91280d1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetItem: {fileID: 11400000, guid: c9bb95367cdd8a04ca5d56c9cfe9b83d, type: 2}
+  nameText: {fileID: 1848288145}
+--- !u!114 &2092848134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092848122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98e638fe8d571c7478eefdbf91280d1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetItem: {fileID: 11400000, guid: c9bb95367cdd8a04ca5d56c9cfe9b83d, type: 2}
+  nameText: {fileID: 74914865}
 --- !u!1001 &7922841429059796551
 PrefabInstance:
   m_ObjectHideFlags: 0
