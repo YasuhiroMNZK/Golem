@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Manga23
   m_EditorClassIdentifier: 
   mangaName: "\u6697\u6BBA\u5B66\u6821"
-  mangaCover: {fileID: 21300000, guid: 5fa8543f78fdf50488c07728d7265bd1, type: 3}
+  mangaCover: {fileID: 21300000, guid: e117c305ccebac04d89a1e5e8bc89fca, type: 3}
   mangaInfo: "\u30DE\u30F3\u30AC\uFF12\uFF13\u306E\u5185\u5BB9"
   mangaLog: "\u3053\u306E\u30DE\u30F3\u30AC\u306B\u3088\u308C\u3070\u3001\u5B66\u6821\u3068\u306F\u6697\u6BBA\u306E\u5834\u306A\u306E\u3060\u305D\u3046\u3060\u3002\n\u885D\u6483\u306E\u771F\u5B9F\uFF01"
   mangaExplain: 

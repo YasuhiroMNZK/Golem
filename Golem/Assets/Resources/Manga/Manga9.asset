@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Manga9
   m_EditorClassIdentifier: 
   mangaName: "\u9244\u306E\u200B\u932C\u91D1\u8853\u5E2B"
-  mangaCover: {fileID: 21300000, guid: 373ffcccb49ff794aba2ffd098a44189, type: 3}
+  mangaCover: {fileID: 21300000, guid: e117c305ccebac04d89a1e5e8bc89fca, type: 3}
   mangaInfo: "\u30DE\u30F3\u30AC\uFF19\u306E\u5185\u5BB9"
   mangaLog: 
   mangaExplain: 
