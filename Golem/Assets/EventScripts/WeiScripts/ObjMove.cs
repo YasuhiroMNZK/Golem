@@ -8,6 +8,14 @@ public class ObjMove : MonoBehaviour
     public Transform target;
 
     /// <summary>
+    /// Animator がアタッチされているオブジェクト
+    /// （このスクリプトとは別オブジェクトの場合に指定）
+    /// </summary>
+    [SerializeField] private GameObject animatorObject;
+
+    Animator animCtrl;
+
+    /// <summary>
     /// 追従する軸を制御するフラグ
     /// </summary>
     [SerializeField] private bool followX = true;
@@ -21,6 +29,9 @@ public class ObjMove : MonoBehaviour
     /// </summary>
     [Range(0f, 2f)]
     public float followFactor = 1f;
+
+    [SerializeField] private float firstPushDistance = 0.1f; // 1回目の押し出し距離
+    private bool hasPushedThisPunch = false;
 
     /// <summary>
     /// target の前フレーム位置
@@ -43,6 +54,17 @@ public class ObjMove : MonoBehaviour
     /// </summary>
     private void Start()
     {
+        // Animator を取得（別オブジェクトから）
+        if (animatorObject != null)
+        {
+            animCtrl = animatorObject.GetComponent<Animator>();
+        }
+        else
+        {
+            // フォールバック：同じオブジェクトから取得（従来挙動）
+            animCtrl = GetComponent<Animator>();
+        }
+
         // Start 時も同じリセット処理を行う
         OnEnable();
     }
@@ -52,47 +74,68 @@ public class ObjMove : MonoBehaviour
     /// </summary>
     private void LateUpdate()
     {
-        if (target == null)
+        if (target == null) return;
+        if (animCtrl == null) return;
+
+        bool animIsPunching = animCtrl.GetBool("isPunching");
+
+        if (!animIsPunching)
         {
+            // 攻撃が終了したらフラグをリセットし、基準位置を更新
+            hasPushedThisPunch = false;
+            _lastTargetPosition = target.position;
             return;
         }
 
-        // target の今回フレームでの移動量
+        // 攻撃中
+
         Vector3 delta = target.position - _lastTargetPosition;
 
-        // 軸ごとのフラグに応じて delta を制限する
         if (!followX) delta.x = 0f;
         if (!followY) delta.y = 0f;
         if (!followZ) delta.z = 0f;
 
-        // target の移動がほぼゼロなら何もしない
+        // プレイヤーからこのオブジェクトへの方向を計算
+        Vector3 toSelf = transform.position - target.position;
+
+        // 1. この攻撃中にまだ一度も押し出しておらず & delta ≒ 0 の場合、1回目だけ押し出す
+        if (!hasPushedThisPunch && delta.sqrMagnitude <= Mathf.Epsilon && toSelf.sqrMagnitude > Mathf.Epsilon)
+        {
+            Vector3 pushDir = (-toSelf).normalized;   // プレイヤーからオブジェクトへ押し出す方向
+            Vector3 push = pushDir * firstPushDistance * followFactor;
+
+            if (!followX) push.x = 0f;
+            if (!followY) push.y = 0f;
+            if (!followZ) push.z = 0f;
+
+            transform.position -= push;
+
+            hasPushedThisPunch = true;
+            _lastTargetPosition = target.position;
+            return;
+        }
+
+        // 2. 通常の delta による追従
         if (delta.sqrMagnitude <= Mathf.Epsilon)
         {
             _lastTargetPosition = target.position;
             return;
         }
 
-        // target からこのオブジェクトへの方向
-        Vector3 toSelf = transform.position - target.position;
-
-        // 内積が正なら「delta と同じ側（= target の進行方向側）にこのオブジェクトがある」
         float dot = Vector3.Dot(delta.normalized, toSelf.normalized);
 
         if (sameDirection)
         {
             if (dot > 0f)
             {
-                // 同じ方向に移動させる（followFactor で強さ調整）
                 transform.position += delta * followFactor;
             }
         }
         else
         {
-                transform.position += delta * followFactor;
+            transform.position += delta * followFactor;
         }
 
-
-        // 次フレーム用に位置を保存
         _lastTargetPosition = target.position;
     }
 }
