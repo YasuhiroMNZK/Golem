@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0c664c7e9394cf2b64bbde8742e1f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetBag: {fileID: 11400000, guid: c3507b43001345e40856c331f47e5064, type: 2}
+  targetBag: {fileID: 11400000, guid: ee831ccaf7d4a47dc914500ea94622f5, type: 2}
   targetItem: {fileID: 11400000, guid: 5eb1eb62beef64ecf80b8af67cb65517, type: 2}
 --- !u!4 &26618358
 Transform:
@@ -1990,6 +1990,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1452948217}
+        m_TargetAssemblyTypeName: PlayAudio, Assembly-CSharp
+        m_MethodName: Action
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   keyname: Fire1
 --- !u!114 &579625625
 MonoBehaviour:
@@ -2138,7 +2150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3acf161f3dbd3ee4cbae10bcd99b0c05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interval: 1
+  interval: 0.2
+  loopCount: 8
 --- !u!82 &689301246
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2771,6 +2784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1
+  loopCount: 5
 --- !u!82 &810063737
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5232,6 +5246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1
+  loopCount: 5
 --- !u!82 &1348998175
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5789,6 +5804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1
+  loopCount: 5
 --- !u!82 &1452948218
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6589,6 +6605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1
+  loopCount: 5
 --- !u!82 &1594031177
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6785,18 +6802,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1348998174}
-        m_TargetAssemblyTypeName: PlayAudio, Assembly-CSharp
-        m_MethodName: Action
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 1645376979}
         m_TargetAssemblyTypeName: MangaMove, Assembly-CSharp
         m_MethodName: MoveManga
@@ -6836,6 +6841,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1594031177}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1452948217}
+        m_TargetAssemblyTypeName: PlayAudio, Assembly-CSharp
+        m_MethodName: Action
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7887,7 +7904,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   Manga: {fileID: 11400000, guid: ff947e3d748c63742b818d60ec67df7b, type: 2}
-  SelectedBag: {fileID: 11400000, guid: aa0be80aa22ad3f43a30c25b40f58142, type: 2}
+  SelectedBag: {fileID: 11400000, guid: 172f0e08ca9e6574c831f62c91d6e5a9, type: 2}
 --- !u!114 &1809367264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7916,7 +7933,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   Manga: {fileID: 11400000, guid: e29bf5cc92daa794e98b3464679cd7d8, type: 2}
-  SelectedBag: {fileID: 11400000, guid: aa0be80aa22ad3f43a30c25b40f58142, type: 2}
+  SelectedBag: {fileID: 11400000, guid: 172f0e08ca9e6574c831f62c91d6e5a9, type: 2}
 --- !u!114 &1809367265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7945,7 +7962,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   Manga: {fileID: 11400000, guid: 5b012e89499d2554990f9a68b5c2e2bf, type: 2}
-  SelectedBag: {fileID: 11400000, guid: aa0be80aa22ad3f43a30c25b40f58142, type: 2}
+  SelectedBag: {fileID: 11400000, guid: 172f0e08ca9e6574c831f62c91d6e5a9, type: 2}
 --- !u!114 &1809367266
 MonoBehaviour:
   m_ObjectHideFlags: 0

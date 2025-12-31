@@ -147,14 +147,14 @@ RectTransform:
   m_GameObject: {fileID: 157559}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.4672, y: 0.4672, z: 0.4672}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 770403126}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: -35}
+  m_AnchoredPosition: {x: 23, y: -7.94}
   m_SizeDelta: {x: 75, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &157561
@@ -659,6 +659,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1259559796}
+        m_TargetAssemblyTypeName: PlayAudio, Assembly-CSharp
+        m_MethodName: Action
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   keyname: Fire1
 --- !u!114 &74914865
 MonoBehaviour:
@@ -1029,14 +1041,14 @@ RectTransform:
   m_GameObject: {fileID: 123263015}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.4672, y: 0.4672, z: 0.4672}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 770403126}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50, y: -35}
+  m_AnchoredPosition: {x: -23, y: -7.94}
   m_SizeDelta: {x: 75, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &123263017
@@ -1295,14 +1307,14 @@ RectTransform:
   m_GameObject: {fileID: 202126870}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.467, y: 0.467, z: 0.467}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 770403126}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 29.1}
+  m_AnchoredPosition: {x: 0, y: 17.75}
   m_SizeDelta: {x: 180.9, y: 35.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &202126872
@@ -1318,7 +1330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.19607843, g: 1, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1326,7 +1338,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: ec98fcf08e327468e832e91baf63646a, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -2619,6 +2631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1
+  loopCount: 5
 --- !u!82 &756243498
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2848,8 +2861,8 @@ RectTransform:
   m_GameObject: {fileID: 770403125}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.3, y: 2.3, z: 2.3}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 202126871}
   - {fileID: 123263016}
@@ -2858,7 +2871,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 39.99998}
+  m_AnchoredPosition: {x: 0, y: 22}
   m_SizeDelta: {x: 300, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &770403127
@@ -2874,14 +2887,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.990566, g: 0.92173886, b: 0.81768423, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: eac4a777afca944f688817fc297fcbf7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3586,6 +3599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1
+  loopCount: 5
 --- !u!82 &1040089375
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3967,7 +3981,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   Manga: {fileID: 11400000, guid: ff947e3d748c63742b818d60ec67df7b, type: 2}
-  SelectedBag: {fileID: 11400000, guid: aa0be80aa22ad3f43a30c25b40f58142, type: 2}
+  SelectedBag: {fileID: 11400000, guid: 172f0e08ca9e6574c831f62c91d6e5a9, type: 2}
 --- !u!114 &1081679467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3996,7 +4010,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   Manga: {fileID: 11400000, guid: e29bf5cc92daa794e98b3464679cd7d8, type: 2}
-  SelectedBag: {fileID: 11400000, guid: aa0be80aa22ad3f43a30c25b40f58142, type: 2}
+  SelectedBag: {fileID: 11400000, guid: 172f0e08ca9e6574c831f62c91d6e5a9, type: 2}
 --- !u!114 &1081679468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4025,7 +4039,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   Manga: {fileID: 11400000, guid: 5b012e89499d2554990f9a68b5c2e2bf, type: 2}
-  SelectedBag: {fileID: 11400000, guid: aa0be80aa22ad3f43a30c25b40f58142, type: 2}
+  SelectedBag: {fileID: 11400000, guid: 172f0e08ca9e6574c831f62c91d6e5a9, type: 2}
 --- !u!114 &1081679469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5141,6 +5155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1
+  loopCount: 5
 --- !u!82 &1259559797
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5704,7 +5719,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u300C\u30DC\u30AF\u3001{name}\u3063\u3066\u3044\u3046\u3093\u3060\uFF01\u300D\r\n"
+  m_Text: "\u30DC\u30AF\u3001{name}\u3063\u3066\u3044\u3046\u3093\u3060\uFF01\r\n"
 --- !u!222 &1286768461
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6433,6 +6448,18 @@ MonoBehaviour:
       - m_Target: {fileID: 756243498}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1259559796}
+        m_TargetAssemblyTypeName: PlayAudio, Assembly-CSharp
+        m_MethodName: Action
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7382,7 +7409,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u300C{name}...{name}...\u30DC\u30AF\u306E\u540D\u524D...\uFF01\u300D\r\n"
+  m_Text: "{name}...{name}...\u30DC\u30AF\u306E\u540D\u524D...\uFF01\r\n"
 --- !u!222 &1848288146
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -665,18 +665,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1771288233}
-        m_TargetAssemblyTypeName: PlayAudio, Assembly-CSharp
-        m_MethodName: Action
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 1819216335}
         m_TargetAssemblyTypeName: MangaMove, Assembly-CSharp
         m_MethodName: MoveManga
@@ -716,6 +704,18 @@ MonoBehaviour:
       - m_Target: {fileID: 251872097}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1469976809}
+        m_TargetAssemblyTypeName: PlayAudio, Assembly-CSharp
+        m_MethodName: Action
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1494,6 +1494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1
+  loopCount: 5
 --- !u!82 &251872097
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4273,7 +4274,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   Manga: {fileID: 11400000, guid: ff947e3d748c63742b818d60ec67df7b, type: 2}
-  SelectedBag: {fileID: 11400000, guid: aa0be80aa22ad3f43a30c25b40f58142, type: 2}
+  SelectedBag: {fileID: 11400000, guid: 172f0e08ca9e6574c831f62c91d6e5a9, type: 2}
 --- !u!114 &906855646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4302,7 +4303,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   Manga: {fileID: 11400000, guid: e29bf5cc92daa794e98b3464679cd7d8, type: 2}
-  SelectedBag: {fileID: 11400000, guid: aa0be80aa22ad3f43a30c25b40f58142, type: 2}
+  SelectedBag: {fileID: 11400000, guid: 172f0e08ca9e6574c831f62c91d6e5a9, type: 2}
 --- !u!114 &906855647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4331,7 +4332,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   Manga: {fileID: 11400000, guid: 5b012e89499d2554990f9a68b5c2e2bf, type: 2}
-  SelectedBag: {fileID: 11400000, guid: aa0be80aa22ad3f43a30c25b40f58142, type: 2}
+  SelectedBag: {fileID: 11400000, guid: 172f0e08ca9e6574c831f62c91d6e5a9, type: 2}
 --- !u!114 &906855648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5451,6 +5452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1
+  loopCount: 5
 --- !u!82 &1023183058
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7061,6 +7063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1
+  loopCount: 5
 --- !u!82 &1469976810
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7669,6 +7672,18 @@ MonoBehaviour:
       - m_Target: {fileID: 251872097}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1469976809}
+        m_TargetAssemblyTypeName: PlayAudio, Assembly-CSharp
+        m_MethodName: Action
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8480,6 +8495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1
+  loopCount: 5
 --- !u!82 &1771288234
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8925,7 +8941,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3acf161f3dbd3ee4cbae10bcd99b0c05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interval: 1
+  interval: 0.2
+  loopCount: 8
 --- !u!82 &1782660052
 AudioSource:
   m_ObjectHideFlags: 0
