@@ -19,7 +19,9 @@ public class PlayerCtrl : MonoBehaviour
     [SerializeField] bool xEnable = true;
     [SerializeField] bool canRun = true;
     [SerializeField] bool canJump = true;
-      // アクセス用プロパティ
+
+    [SerializeField] bool canPunch = false;
+    // アクセス用プロパティ
     public bool CanRun => canRun;
     public bool CanJump => canJump;
     public bool CanScale => canScale;
@@ -34,6 +36,10 @@ public class PlayerCtrl : MonoBehaviour
     Vector3 forwardVec;
     Vector3 rightVec;
 
+    // 一時退避用
+    bool? backupCanRun = null;
+    bool? backupCanJump = null;
+    bool? backupCanScale = null;
 
     // Start is called before the first frame update
     void Start()
@@ -175,6 +181,51 @@ public class PlayerCtrl : MonoBehaviour
                 }
             }
         }
+
+        // Punch control
+        if (canPunch)
+        {
+            // 押している間だけ true
+            bool isPunching = Input.GetButton("ObjMove");
+            animCtrl.SetBool("isPunching", isPunching);
+        }
+        else
+        {
+            // パンチ無効時は必ず false にしておく
+            animCtrl.SetBool("isPunching", false);
+        }
+
+        // isPunching 中は run / jump / scale を禁止
+        bool animIsPunching = animCtrl.GetBool("isPunching");
+        if (animIsPunching)
+        {
+            // まだバックアップしていなければ現在値を保存
+            if (backupCanRun == null)
+            {
+                backupCanRun = canRun;
+                backupCanJump = canJump;
+                backupCanScale = canScale;
+            }
+
+            canRun = false;
+            canJump = false;
+            canScale = false;
+        }
+        else
+        {
+            // パンチ終了時に元の値を戻す
+            if (backupCanRun != null)
+            {
+                canRun = backupCanRun.Value;
+                canJump = backupCanJump.Value;
+                canScale = backupCanScale.Value;
+
+                backupCanRun = null;
+                backupCanJump = null;
+                backupCanScale = null;
+            }
+        }
+
         if (canScale == true)
             transform.localScale = new Vector3(BeScale, BeScale, BeScale);
         else if (canScale == false)
@@ -207,7 +258,17 @@ public class PlayerCtrl : MonoBehaviour
 
     public void OnScale()
     {
-       canScale = true;
+        canScale = true;
+    }
+
+    public void OnPunch()
+    {
+        canPunch = true;
+    }
+    
+        public void DisPunch()
+    {
+       canPunch = false;
     }
 
     public void TrueBig()
