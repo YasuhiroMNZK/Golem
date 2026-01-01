@@ -22,6 +22,7 @@ public class PlayerCtrl : MonoBehaviour
       // アクセス用プロパティ
     public bool CanRun => canRun;
     public bool CanJump => canJump;
+    public bool CanScale => canScale;
 
     [SerializeField] bool FPSMove = false;
     [SerializeField] bool useAnimationRotate = false;
@@ -174,7 +175,7 @@ public class PlayerCtrl : MonoBehaviour
                 }
             }
         }
-         if (canScale == true)
+        if (canScale == true)
             transform.localScale = new Vector3(BeScale, BeScale, BeScale);
         else if (canScale == false)
             transform.localScale = new Vector3(NoScale, NoScale, NoScale);
@@ -207,6 +208,16 @@ public class PlayerCtrl : MonoBehaviour
     public void OnScale()
     {
        canScale = true;
+    }
+
+    public void TrueBig()
+    {
+        animCtrl.SetBool("isBig", true);
+    }
+
+    public void FalseBig()
+    {
+        animCtrl.SetBool("isBig", false);
     }
     
     

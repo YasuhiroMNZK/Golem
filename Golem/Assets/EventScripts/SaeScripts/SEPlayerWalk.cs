@@ -6,9 +6,10 @@ public class SEPlayerWalk : MonoBehaviour
     [SerializeField] private PlayerCtrl playerCtrl; // PlayerCtrlの参照
     [SerializeField] private float walkSoundInterval = 0.6f; // 歩行音の間隔（秒）
     [SerializeField] private float runSoundInterval = 0.4f; // 走行音の間隔（秒）
-    [SerializeField] private AudioClip walkSound; // 歩行SE
-    [SerializeField] private AudioClip runSound; // 走行SE
+    [SerializeField] private AudioClip walkSound; // 歩くSE
+    [SerializeField] private AudioClip runSound; // 走るSE
     [SerializeField] private AudioClip jumpSound; // ジャンプSE
+    [SerializeField] private AudioClip BigSound; // 巨大SE
     private float lastWalkSoundTime = 0f;
     private bool wasWalking = false;
 
@@ -24,6 +25,7 @@ public class SEPlayerWalk : MonoBehaviour
         bool isWalking = Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0;
         bool canRun = playerCtrl != null ? playerCtrl.CanRun : true; // PlayerCtrlのcanRunを参照
         bool canJump = playerCtrl != null ? playerCtrl.CanJump : true; // PlayerCtrlのcanJumpを参照
+        bool canScale = playerCtrl != null ? playerCtrl.CanScale : true; // PlayerCtrlのcanScaleを参照
         bool isRunning = Input.GetButton("Fire3") && isWalking && canRun; // Shiftキー + 移動 + canRun条件
 
         // ジャンプSE
@@ -43,13 +45,25 @@ public class SEPlayerWalk : MonoBehaviour
 
                 lastWalkSoundTime = Time.time;
             }
-            // 走りか歩きかで間隔とSEを変える
+            //　移動中は一定間隔で歩行音を鳴らす
             else
             {
                 float soundInterval = isRunning ? runSoundInterval : walkSoundInterval;
                 if (Time.time - lastWalkSoundTime >= soundInterval)
                 {
-                    AudioClip clipToPlay = isRunning ? runSound : walkSound;
+                    AudioClip clipToPlay;
+                    
+                    // canScaleがTrueの時はBigSoundを使用
+                    if (canScale && BigSound != null)
+                    {
+                        clipToPlay = BigSound;
+                    }
+                    // それ以外は走行音か歩行音を使用
+                    else
+                    {
+                        clipToPlay = isRunning ? runSound : walkSound;
+                    }
+                    
                     if (clipToPlay != null)
                     {
                         audiosource.clip = clipToPlay;
