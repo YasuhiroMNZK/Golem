@@ -9,10 +9,10 @@ public class SEPlayerWalk : MonoBehaviour
     [SerializeField] private float runSoundInterval = 0.4f; // 走行音の間隔（秒）
 
     [SerializeField] private float punchSoundInterval = 0.4f; // 殴る音の間隔（秒）
-    [SerializeField] private AudioClip walkSound; // 歩行SE
-    [SerializeField] private AudioClip runSound; // 走行SE
+    [SerializeField] private AudioClip walkSound; // 歩くSE
+    [SerializeField] private AudioClip runSound; // 走るSE
     [SerializeField] private AudioClip jumpSound; // ジャンプSE
-
+    [SerializeField] private AudioClip BigSound; // 巨大SE
     [SerializeField] private AudioClip punchSound; // 殴るSE
     private float lastWalkSoundTime = 0f;
     private bool wasWalking = false;
