@@ -111,6 +111,8 @@ public class MoveBar : MonoBehaviour
         savedEnergy = energy;
     }
 
+    
+
     // 現在のエネルギー値を取得
     public float GetEnergy()
     {
@@ -121,6 +123,15 @@ public class MoveBar : MonoBehaviour
     public void SetEnergy(float value)
     {
         energy = Mathf.Clamp(value, 0, maxEnergy);
+        savedEnergy = energy;
+    }
+
+    // 指定量だけエネルギーを回復（保存されている最大エネルギーを上限にする）
+    public void AddEnergy(float amount)
+    {
+        // PlayerPrefs に保存されている最大エネルギーを使用
+        float newEnergy = energy + amount;
+        energy = Mathf.Clamp(newEnergy, 0f, maxEnergy);
         savedEnergy = energy;
     }
 

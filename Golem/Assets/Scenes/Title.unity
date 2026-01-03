@@ -496,6 +496,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0a98b8fd815f03741b4a76485a27c997, type: 2}
   - {fileID: 11400000, guid: 0b12dc457f9b40e4e83128cbccce0836, type: 2}
   - {fileID: 11400000, guid: d8ce5439709b04c7986d9389181ce7e9, type: 2}
+  - {fileID: 11400000, guid: 9c06ebeef87535f49ba9cdebe69ff885, type: 2}
   BagFrom: {fileID: 11400000, guid: aa0be80aa22ad3f43a30c25b40f58142, type: 2}
 --- !u!114 &456958689
 MonoBehaviour:
@@ -595,6 +596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1
+  loopCount: 5
 --- !u!82 &488991725
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1730,6 +1732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1
+  loopCount: 5
 --- !u!82 &1747873521
 AudioSource:
   m_ObjectHideFlags: 0

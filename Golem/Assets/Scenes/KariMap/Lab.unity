@@ -4447,6 +4447,7 @@ GameObject:
   - component: {fileID: 1081679486}
   - component: {fileID: 1081679487}
   - component: {fileID: 1081679484}
+  - component: {fileID: 1081679488}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4588,7 +4589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  jumppow: 7.5
+  jumppow: 7
   fallspd: 2
   useCameraDir: 1
   movedirOffset: 0
@@ -5361,6 +5362,35 @@ MonoBehaviour:
         m_CallState: 2
   remainTime: 1
   continuous: 0
+--- !u!114 &1081679488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081679464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76f9aaa7fc2cd9844afc3acebe419d20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1081679471}
+        m_TargetAssemblyTypeName: PlayerCtrl, Assembly-CSharp
+        m_MethodName: OnPunch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Manga: {fileID: 11400000, guid: c20f8d0d363a58946a178f92b7a40b72, type: 2}
+  SelectedBag: {fileID: 11400000, guid: 172f0e08ca9e6574c831f62c91d6e5a9, type: 2}
 --- !u!1 &1108920372
 GameObject:
   m_ObjectHideFlags: 0
