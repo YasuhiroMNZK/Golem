@@ -124,7 +124,7 @@ public class MangaShow : MonoBehaviour
         Item item = getMangaBag.itemList[index];
         if (item != null && targetText != null)
         {
-            targetText.text = $"「{item.mangaInfo}」が記されている！！"; // mangaTitleはItemクラスのstringプロパティと仮定
+            targetText.text = $"{item.mangaInfo}"; // mangaTitleはItemクラスのstringプロパティと仮定
         }
     }
 
