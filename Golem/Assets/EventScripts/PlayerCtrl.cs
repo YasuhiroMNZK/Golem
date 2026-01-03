@@ -119,12 +119,16 @@ public class PlayerCtrl : MonoBehaviour
         if (charCtrl.isGrounded)
         {
             fallpow = -2f;
-            if (canJump && Input.GetButtonDown("Jump"))
+            if (canJump && Input.GetButtonDown("Jump")) // ジャンプボタンが押されたら
             {
                 fallpow = jumppow;
+                animCtrl.SetBool("isJumping", true);
+            }
+            else if (fallpow <= -2f) // 地面にいる間は常にFalse
+            {
+                animCtrl.SetBool("isJumping", false);
             }
             //Animation
-            animCtrl.SetBool("isJumping", false);
             animCtrl.SetFloat("Speed", moveDir.magnitude);
         }
         else
@@ -132,7 +136,7 @@ public class PlayerCtrl : MonoBehaviour
             if (fallpow > -2.0f || fallpow < -2.0f - fallspd)
             //if (!Mathf.Approximately(fallpow,-2))
             {
-                animCtrl.SetBool("isJumping", true);
+                //animCtrl.SetBool("isJumping", true);
             }
             fallpow += Physics.gravity.y * Time.deltaTime * fallspd;
         }
