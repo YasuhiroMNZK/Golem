@@ -238,7 +238,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13838402}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b535dd203bb8d4d4e847190cc79a162b, type: 3}
   m_Name: 
@@ -333,10 +333,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1081679471}
-        m_TargetAssemblyTypeName: PlayerCtrl, Assembly-CSharp
-        m_MethodName: DisPunch
-        m_Mode: 1
+      - m_Target: {fileID: 13838409}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_isKinematic
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3140,6 +3140,7 @@ MonoBehaviour:
   walkSound: {fileID: 8300000, guid: 37cacfdbe71684f2e9f699a3b238a945, type: 3}
   runSound: {fileID: 8300000, guid: 72a57f1cb53ac4646ac6abce9e860377, type: 3}
   jumpSound: {fileID: 8300000, guid: 869bed8ec49ba4b86bb316b7d6fde52e, type: 3}
+  BigSound: {fileID: 0}
   punchSound: {fileID: 8300000, guid: 733cdb7b86c2d2a4f824713012a4cf0d, type: 3}
 --- !u!1 &1171284105
 GameObject:
@@ -5023,10 +5024,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1081679471}
-        m_TargetAssemblyTypeName: PlayerCtrl, Assembly-CSharp
-        m_MethodName: OnPunch
-        m_Mode: 1
+      - m_Target: {fileID: 13838408}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5050,10 +5051,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1081679471}
-        m_TargetAssemblyTypeName: PlayerCtrl, Assembly-CSharp
-        m_MethodName: DisPunch
-        m_Mode: 1
+      - m_Target: {fileID: 13838408}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
