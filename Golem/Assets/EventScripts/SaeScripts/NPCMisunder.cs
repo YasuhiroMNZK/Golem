@@ -4,6 +4,9 @@ public class NPCMisunder : MonoBehaviour
 {
     [SerializeField] private Bag getMangaBag;
     [SerializeField] private GameObject character;
+    
+    // 元のAnimatorControllerを保存するための変数
+    private RuntimeAnimatorController originalController;
 
     void Start()
     {
@@ -54,10 +57,16 @@ public class NPCMisunder : MonoBehaviour
         var animator = character?.GetComponent<Animator>();
         if (animator?.runtimeAnimatorController != null)
         {
+            // 元のAnimatorControllerを保存（まだ保存されていない場合のみ）
+            if (originalController == null)
+            {
+                originalController = animator.runtimeAnimatorController;
+            }
+            
             // AnimatorOverrideControllerを作成
-            var overrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
+            var overrideController = new AnimatorOverrideController(originalController);
             // 既存のアニメーションクリップを取得
-            var clips = animator.runtimeAnimatorController.animationClips;
+            var clips = originalController.animationClips;
             
             if (clips.Length > 0)
             {
@@ -69,5 +78,28 @@ public class NPCMisunder : MonoBehaviour
                 animator.Play(0);
             }
         }
+    }
+
+    /// <summary>
+    /// アニメーションクリップを元のアニメーションクリップに戻す
+    /// </summary>
+    public void ResetAnimation()
+    {
+        var animator = character?.GetComponent<Animator>();
+        if (animator != null && originalController != null)
+        {
+            // 元のAnimatorControllerに戻す
+            animator.runtimeAnimatorController = originalController;
+            // アニメーションを再生
+            animator.Play(0);
+        }
+    }
+
+    /// <summary>
+    /// 元のAnimatorControllerの参照をクリア
+    /// </summary>
+    public void ClearOriginalController()
+    {
+        originalController = null;
     }
 }
