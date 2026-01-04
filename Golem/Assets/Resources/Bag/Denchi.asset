@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c98784b745f72ac46a9e7fdb220fd0aa, type: 3}
   m_Name: Denchi
   m_EditorClassIdentifier: 
-  itemList:
-  - {fileID: 11400000, guid: cd7080e6f40384845b458cc3e69c9c74, type: 2}
+  itemList: []
