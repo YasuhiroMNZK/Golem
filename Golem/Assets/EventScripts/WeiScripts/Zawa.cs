@@ -23,6 +23,11 @@ public class Zawa : MonoBehaviour
     [SerializeField] private float afterFadeOutMin = 0.5f;
     [SerializeField] private float afterFadeOutMax = 2f;
 
+    [Header("初期完全透明維持時間（秒）")]
+    [SerializeField] private float initialInvisibleMin = 0f;
+    [SerializeField] private float initialInvisibleMax = 0f;
+    private float initialInvisibleDuration;
+
     [Header("出現位置のランダム範囲 (Canvas 上の anchoredPosition)")]
     [SerializeField] private Vector2 positionMin = new Vector2(-200f, -200f);
     [SerializeField] private Vector2 positionMax = new Vector2(200f, 200f);
@@ -42,6 +47,10 @@ public class Zawa : MonoBehaviour
 
     private RectTransform _rectTransform;
 
+    // 初期完全透明フェーズ管理用
+    private float _initialTimer;
+    private bool _isInitialPhase;
+
     void Start()
     {
         if (targetImage != null)
@@ -58,7 +67,15 @@ public class Zawa : MonoBehaviour
 
             SetupNewCycle();
             _timer = 0f;
-            _isPlaying = true;
+
+            // 初期完全透明時間をランダム決定
+            initialInvisibleDuration = Random.Range(initialInvisibleMin, initialInvisibleMax);
+            if (initialInvisibleDuration < 0f) initialInvisibleDuration = 0f;
+
+            // 初期完全透明フェーズ開始
+            _initialTimer = 0f;
+            _isInitialPhase = initialInvisibleDuration > 0f;
+            _isPlaying = !_isInitialPhase;
         }
     }
 
@@ -93,7 +110,30 @@ public class Zawa : MonoBehaviour
 
     void Update()
     {
-        if (!_isPlaying || targetImage == null)
+        if (targetImage == null)
+            return;
+
+        // 初期完全透明フェーズ
+        if (_isInitialPhase)
+        {
+            _initialTimer += Time.deltaTime;
+
+            // 念のため毎フレーム透明を維持
+            var initCol = targetImage.color;
+            initCol.a = 0f;
+            targetImage.color = initCol;
+
+            if (_initialTimer >= initialInvisibleDuration)
+            {
+                // 初期フェーズ終了 → 通常サイクル開始
+                _isInitialPhase = false;
+                _isPlaying = true;
+                _timer = 0f;
+            }
+            return;
+        }
+
+        if (!_isPlaying)
             return;
 
         _timer += Time.deltaTime;
