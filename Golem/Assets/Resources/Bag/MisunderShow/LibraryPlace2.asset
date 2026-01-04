@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c98784b745f72ac46a9e7fdb220fd0aa, type: 3}
   m_Name: LibraryPlace2
   m_EditorClassIdentifier: 
-  itemList:
-  - {fileID: 11400000, guid: c20f8d0d363a58946a178f92b7a40b72, type: 2}
+  itemList: []
