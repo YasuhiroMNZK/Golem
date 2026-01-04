@@ -19,4 +19,4 @@ MonoBehaviour:
   mangaExplain: 
   NPCvisualChange: {fileID: 21300000, guid: 8118db95cdeb34d7196437c234ff288e, type: 3}
   NPCanimation: {fileID: 0}
-  NPCText: 
+  NPCText: "\u4EBA\u9593\u306F\u604B\u611B\u3059\u308B\u6642\u306E\u30AD\u30E9\u30AD\u30E9\u3092\u771F\u4F3C\u3057\u3066\u307F\u305F\u3088\uFF01\n\u4E0D\u601D\u8B70\u306A\u4ED5\u7D44\u307F\u3060\u3088\u306D\u3002"

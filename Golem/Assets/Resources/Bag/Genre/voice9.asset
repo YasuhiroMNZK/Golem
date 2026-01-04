@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c98784b745f72ac46a9e7fdb220fd0aa, type: 3}
-  m_Name: LibraryPlace2
+  m_Name: voice9
   m_EditorClassIdentifier: 
   itemList:
-  - {fileID: 11400000, guid: de119b575d279f74ea6f4363addd14aa, type: 2}
+  - {fileID: 11400000, guid: 767cc5908888ef9428dec71c7cef80eb, type: 2}
+  - {fileID: 11400000, guid: 38035f11d6155d84bbf92058af80ca84, type: 2}
+  - {fileID: 11400000, guid: fee2d1b7935dd45f6ba1cfa1c170eb80, type: 2}
