@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ecd2ec15bddb7c488cca599a019e481, type: 3}
   m_Name: Name
   m_EditorClassIdentifier: 
-  mangaName: 123
+  mangaName: 
   mangaCover: {fileID: 0}
   mangaInfo: 
   mangaLog: 
