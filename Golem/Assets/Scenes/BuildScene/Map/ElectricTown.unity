@@ -4945,7 +4945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d6248cd4304fc94d903e94e9646f644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energyConsumptionRate: 5
+  energyConsumptionRate: 2.5
   energySlider: {fileID: 2007446907}
   onEnergyDepleted:
     m_PersistentCalls:
@@ -5106,7 +5106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d6248cd4304fc94d903e94e9646f644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energyConsumptionRate: 5
+  energyConsumptionRate: 2.5
   energySlider: {fileID: 2007446907}
   onEnergyDepleted:
     m_PersistentCalls:
@@ -9807,7 +9807,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadePanel: {fileID: 1307943309}
   fadeDuration: 3
-  targetSceneName: Title
+  targetSceneName: Endingroll
 --- !u!114 &1307943309
 MonoBehaviour:
   m_ObjectHideFlags: 0

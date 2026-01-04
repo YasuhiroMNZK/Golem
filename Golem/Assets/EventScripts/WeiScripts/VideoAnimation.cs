@@ -1,12 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
+using UnityEngine.Events;  // イベント用
 
 public class VideoAnimation : MonoBehaviour
 {
     [SerializeField] private VideoPlayer videoPlayer;
     [SerializeField] private RawImage rawImage;        
     [SerializeField] private Texture loadingTexture;   
+
+    // 任意のトリガーから呼び出すためのイベント（インスペクターで設定可能）
 
     private void Start()
     {
@@ -50,4 +53,16 @@ public class VideoAnimation : MonoBehaviour
 
         vp.Play();  
     }
+
+    // 動画の末尾にジャンプする公開メソッド
+    public void JumpToVideoEnd()
+    {
+        if (videoPlayer == null || !videoPlayer.isPrepared)
+            return;
+
+        // フレームベースで最後のフレームへジャンプ
+        videoPlayer.time = videoPlayer.length - 0.05f;
+        videoPlayer.Play();
+    }
+
 }

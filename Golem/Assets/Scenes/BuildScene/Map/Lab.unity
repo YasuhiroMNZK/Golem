@@ -7519,7 +7519,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadePanel: {fileID: 1575610380}
   fadeDuration: 3
-  targetSceneName: EpilogueDoc
+  targetSceneName: Endingroll
 --- !u!114 &1575610380
 MonoBehaviour:
   m_ObjectHideFlags: 0
