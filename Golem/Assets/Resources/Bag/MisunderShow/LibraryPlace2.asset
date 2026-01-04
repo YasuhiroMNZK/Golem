@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: LibraryPlace2
   m_EditorClassIdentifier: 
   itemList:
-  - {fileID: 11400000, guid: 23f1670b1e0f1495ebb02572bbbf1a9f, type: 2}
+  - {fileID: 11400000, guid: c20f8d0d363a58946a178f92b7a40b72, type: 2}

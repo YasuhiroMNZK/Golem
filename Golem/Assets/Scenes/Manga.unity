@@ -10014,6 +10014,7 @@ GameObject:
   - component: {fileID: 2014781963}
   - component: {fileID: 2014781967}
   - component: {fileID: 2014781968}
+  - component: {fileID: 2014781970}
   - component: {fileID: 2014781964}
   - component: {fileID: 2014781966}
   - component: {fileID: 2014781969}
@@ -10088,6 +10089,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2014781968}
+        m_TargetAssemblyTypeName: BagClear, Assembly-CSharp
+        m_MethodName: ClearBag
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2014781970}
         m_TargetAssemblyTypeName: BagClear, Assembly-CSharp
         m_MethodName: ClearBag
         m_Mode: 1
@@ -10470,6 +10483,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetBag: {fileID: 11400000, guid: 9c06ebeef87535f49ba9cdebe69ff885, type: 2}
+--- !u!114 &2014781970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014781953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d326d88244543ac90e8de39acdead9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetBag: {fileID: 11400000, guid: 3a8bb299e21d0044a8c2542bdc13210b, type: 2}
 --- !u!1 &2040078355
 GameObject:
   m_ObjectHideFlags: 0
