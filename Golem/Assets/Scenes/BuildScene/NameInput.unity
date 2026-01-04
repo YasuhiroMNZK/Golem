@@ -677,7 +677,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1747873520}
         m_TargetAssemblyTypeName: PlayAudio, Assembly-CSharp
-        m_MethodName: Action
+        m_MethodName: KeepAction
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
