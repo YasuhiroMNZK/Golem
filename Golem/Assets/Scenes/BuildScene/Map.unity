@@ -2551,7 +2551,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u3069\u306E\u30DE\u30F3\u30AC\u3092\u30B9\u30AD\u30E3\u30F3\u3059\u308B\u304B\u306F\u614E\u91CD\u306B\u306D\uFF01"
+  m_Text: "\u96C6\u3081\u305F\u30DE\u30F3\u30AC\u3092\u6301\u3063\u3066\u5E30\u3063\u3066\u89E3\u6790\u3057\u3066\u304B\u3089\u307F\u3093\u306A\u306B\u5E83\u3081\u3088\u3046\uFF01"
 --- !u!222 &636524292
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2591,18 +2591,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: PlayAudio, Assembly-CSharp
         m_MethodName: Action
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1338635286}
-        m_TargetAssemblyTypeName: FogFlag, Assembly-CSharp
-        m_MethodName: RelayAction
-        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3571,7 +3559,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1131640335
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3624,7 +3612,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u305F\u3060\u3057\u3001\u3069\u3046\u3084\u3089\u7D4C\u5E74\u52A3\u5316\u3067\u30D0\u30C3\u30C6\u30EA\u30FC\u304C\u8106\u5F31\u5316\u3057\u3066\u3044\u308B\u3088\u3046\u3067\n\u79FB\u52D5\u8DDD\u96E2\u306B\u306F\u5236\u9650\u304C\u3042\u308B\uFF01"
+  m_Text: "\u7159\u304C\u6674\u308C\u308B"
 --- !u!222 &1131640337
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3717,7 +3705,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1147741848}
-  - {fileID: 1978903660}
   - {fileID: 1131640335}
   - {fileID: 1769828479}
   - {fileID: 2083488162}
@@ -3786,6 +3773,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1338635286}
+        m_TargetAssemblyTypeName: FogFlag, Assembly-CSharp
+        m_MethodName: RelayAction
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6626,7 +6625,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u96C6\u3081\u305F\u30DE\u30F3\u30AC\u3092\u6301\u3063\u3066\u5E30\u3063\u3066\u89E3\u6790\u3057\u3066\u304B\u3089\n\u307F\u3093\u306A\u306B\u5E83\u3081\u3088\u3046\uFF01"
+  m_Text: "\u7159\u304C\u6674\u308C\u3066\u3001\u8272\u3005\u306A\u5834\u6240\u306B\u884C\u3051\u308B\u3088\u3046\u306B\u306A\u3063\u3066\u308B\uFF01\n\u3042\u306E\u5965\u306E\u7159\u3082\u3001\u63A2\u7D22\u3092\u7D9A\u3051\u3066\u3044\u305F\u3089\u6674\u308C\u308B\u304B\u306A\uFF1F"
 --- !u!222 &1769828481
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7360,138 +7359,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
---- !u!1 &1978903659
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1978903660}
-  - component: {fileID: 1978903662}
-  - component: {fileID: 1978903661}
-  - component: {fileID: 1978903663}
-  m_Layer: 5
-  m_Name: Text (Legacy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1978903660
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1978903659}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1145041732}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8, y: -120}
-  m_SizeDelta: {x: 563, y: 70.6}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1978903661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1978903659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 1, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: ec98fcf08e327468e832e91baf63646a, type: 3}
-    m_FontSize: 19
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 40
-    m_Alignment: 3
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: "\u30DE\u30F3\u30AC\u3092\u63A2\u3057\u306B\u51FA\u304B\u3051\u3088\u3046\uFF01"
---- !u!222 &1978903662
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1978903659}
-  m_CullTransparentMesh: 1
---- !u!114 &1978903663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1978903659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f46ee74f5e2f33e41ac777e3ca1ba8dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  action:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1978903659}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1131640334}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1884556117}
-        m_TargetAssemblyTypeName: PlayAudio, Assembly-CSharp
-        m_MethodName: Action
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  keyname: Fire1
 --- !u!1 &1980676458
 GameObject:
   m_ObjectHideFlags: 0
@@ -7886,7 +7753,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u30B9\u30AD\u30E3\u30F3\u306F\u30A8\u30CD\u30EB\u30AE\u30FC\u3092\u305F\u304F\u3055\u3093\u4F7F\u3046\u306E\u3067\u3001\n\u4E00\u65E5\u4E8C\u518A\u304C\u9650\u754C\u307F\u305F\u3044\u3002"
+  m_Text: "\u305F\u3060\u3001\u3069\u3046\u3084\u3089\u7D4C\u5E74\u52A3\u5316\u3067\u30D0\u30C3\u30C6\u30EA\u30FC\u304C\u8106\u5F31\u5316\u3057\u3066\u3044\u308B\u3088\u3046\u3067\n\u79FB\u52D5\u8DDD\u96E2\u306B\u306F\u5236\u9650\u304C\u3042\u308B\uFF01"
 --- !u!222 &2083488164
 CanvasRenderer:
   m_ObjectHideFlags: 0

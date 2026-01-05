@@ -8,6 +8,9 @@ public class Pause : MonoBehaviour
     // 一時暂停フラグ
     [SerializeField] private bool isPaused = false;
 
+    // 現在の暂停状態をどこからでも参照できる静的プロパティ
+    public static bool IsPausedStatic => Instance != null && Instance.isPaused;
+
     private void Awake()
     {
         // シンプルなシングルトン

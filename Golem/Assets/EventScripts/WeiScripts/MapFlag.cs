@@ -38,6 +38,25 @@ public class MapFlag : MonoBehaviour
         gameFlags[flagnumber] = Flags[flagnumber];
     }
 
+    // 全てのフラグを一括で unset する
+    public void UnsetAllFlags()
+    {
+        for (int i = 0; i < Flags.Length; i++)
+        {
+            Flags[i] = false;
+        }
+
+        if (gameFlags == null || gameFlags.Length != Flags.Length)
+        {
+            gameFlags = new bool[Flags.Length];
+        }
+
+        for (int i = 0; i < gameFlags.Length; i++)
+        {
+            gameFlags[i] = Flags[i];
+        }
+    }
+    
     public void RelayAction(int flagnumber)
     {
         if (Flags[flagnumber])
