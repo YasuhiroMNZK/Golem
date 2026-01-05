@@ -7778,13 +7778,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993628113}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.30070576, w: 0.953717}
-  m_LocalPosition: {x: -0.3123, y: 0.007, z: 6.1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.36650118, w: 0.9304176}
+  m_LocalPosition: {x: -0.2535, y: -0.0339, z: 6.100005}
   m_LocalScale: {x: 0.09331789, y: 0.5687801, z: 8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1066176126}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 35}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 43}
 --- !u!64 &993628115
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8756,7 +8756,7 @@ CharacterController:
   m_Radius: 1.8
   m_SlopeLimit: 45
   m_StepOffset: 0.3
-  m_SkinWidth: 0.0001
+  m_SkinWidth: 0.05
   m_MinMoveDistance: 0.001
   m_Center: {x: 0.2, y: 4.95, z: 0}
 --- !u!212 &1081679473
@@ -12616,9 +12616,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1358850479}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
+      - m_Target: {fileID: 1358850480}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12626,7 +12626,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!54 &1358850479
 Rigidbody:
@@ -12758,8 +12758,8 @@ Transform:
   m_GameObject: {fileID: 1358850477}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.85, y: 1.619, z: 6.148}
-  m_LocalScale: {x: 1, y: 1, z: 0.76}
+  m_LocalPosition: {x: -0.85, y: 1.619, z: 6.121}
+  m_LocalScale: {x: 1, y: 1, z: 0.81}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1966380245}
@@ -17262,7 +17262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1966380243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17348,7 +17348,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.5, y: 0.05, z: 0.8}
+  m_Size: {x: 1.5, y: 0.1, z: 0.9}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1966380245
 Transform:
