@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class FogFlag : MonoBehaviour
+public class ObjFlag : MonoBehaviour
 {
 
     static bool[] Flags = new bool[8];
@@ -56,7 +56,7 @@ public class FogFlag : MonoBehaviour
             gameFlags[i] = Flags[i];
         }
     }
-
+    
     public void RelayAction(int flagnumber)
     {
         if (Flags[flagnumber])

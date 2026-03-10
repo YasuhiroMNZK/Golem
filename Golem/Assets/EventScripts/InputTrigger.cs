@@ -9,7 +9,13 @@ public class InputTrigger : TriggerBase
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown(keyname))
+        // 暂停中は入力を無効化
+        if (Pause.IsPausedStatic)
+        {
+            return;
+        }
+
+        if (Input.GetButtonDown(keyname))
         {
             action.Invoke();
         }
