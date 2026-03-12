@@ -18,6 +18,9 @@ public class MoveBar : MonoBehaviour
     private bool energyDepletedTriggered = false;
     private static float savedEnergy = -1f; // Scene間で保持
 
+    // エネルギー枯渇状態を外部から参照可能にするプロパティ
+    public bool IsEnergyDepleted => energyDepletedTriggered;
+
     private void Awake()
     {
         // PlayerPrefsからenergy値をロード
